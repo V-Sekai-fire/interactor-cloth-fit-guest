@@ -11,6 +11,12 @@ paste "$t/cpp.txt" "$t/lean.txt" | awk '{ n++; if ($1-$3 > 1e-6 || $3-$1 > 1e-6 
 sed 's/^0.0/0.0/' "$t/lean.txt" | awk 'NR==1{$1=$1+1}1' > "$t/wrong.txt"
 if paste "$t/cpp.txt" "$t/wrong.txt" | awk '{ if ($1-$3 > 1e-6 || $3-$1 > 1e-6) exit 1 }'; then echo "control failed: a wrong value passed"; exit 1; fi
 echo "control ok: a wrong value is caught"
+# the committed kernel is the Lean emit, not a hand edit
+(cd kernels/fit/lean && lake exe emit_fit "$t/emit" >/dev/null)
+diff "$t/emit/fit_energy.slang" kernels/fit/slang/fit_energy.slang && echo "fit_energy.slang == lake exe emit_fit"
+sed 's/2.0L/3.0L/' kernels/fit/slang/fit_energy.slang > "$t/edited.slang"
+if diff -q "$t/emit/fit_energy.slang" "$t/edited.slang" >/dev/null; then echo "control failed: a hand edit passed"; exit 1; fi
+echo "control ok: a hand edit is caught"
 slangc kernels/fit/slang/fit_energy.slang -target spirv -entry main -stage compute -o "$t/fit_energy.spv"
 spirv-val "$t/fit_energy.spv" && echo "fit_energy.spv valid ($(wc -c < "$t/fit_energy.spv") bytes)"
 rm -rf "$t"
