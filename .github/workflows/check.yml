@@ -1,0 +1,12 @@
+name: check
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  no-cpu:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sh tools/check_no_cpu.sh --self-test
+      - run: sh tools/check_no_cpu.sh
