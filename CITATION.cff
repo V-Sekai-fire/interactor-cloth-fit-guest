@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: interactor-cloth-fit-guest
+message: Cite the cloth-fit method when you use this stage.
+type: software
+authors:
+  - family-names: Lee
+    given-names: K. S. Ernest (iFire)
+license: MIT
+repository-code: https://github.com/V-Sekai-fire/interactor-cloth-fit-guest
+references:
+  - type: article
+    title: Intersection-free Garment Retargeting
+    authors:
+      - family-names: Huang
+        given-names: Zizhou
+    year: 2025
+    journal: ACM Transactions on Graphics (SIGGRAPH 2025)
