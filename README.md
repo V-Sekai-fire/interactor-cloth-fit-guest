@@ -12,7 +12,7 @@ There is no CPU solver in this repository and none may be added, and nothing fal
 
 ## Status
 
-Scaffold. The guest, the kernels and the Lean specifications are not written yet. The first kernels to write, from `core/cloth-fit/src/polyfem/garment/GarmentNLProblem.cpp` and `solver/forms`, are the garment energy terms and their gradient; the contact barrier follows.
+Scaffold plus one kernel. `kernels/fit/` holds the per-sample garment fit term of `FitForm` (`value` and `dvalue/dd` at `power = 2`): a Lean specification, a double-precision Slang compute kernel, and `tools/test_fit.sh`, which checks the Lean values against a C++ oracle of the PolyFEM formula on six vectors (with a planted wrong value that must be caught) and compiles the kernel to SPIR-V that `spirv-val` accepts. The kernel has not run on a GPU yet, the Lean is hand-written rather than emitted through LeanSlang, and the guest is not written. Next: the contact barrier, then the guest that dispatches these kernels through ggml-rd.
 
 ## Build
 

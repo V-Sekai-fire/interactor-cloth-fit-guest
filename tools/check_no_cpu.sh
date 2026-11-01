@@ -2,7 +2,7 @@
 # Fails when guest/ or kernels/ names a CPU compute path, a fallback or a swallowed failure (BLOCKLIST.md).
 # Usage: check_no_cpu.sh [--self-test] [root]
 PAT='ggml_backend_cpu|GGML_BACKEND_CPU|std::thread|std::async|pthread_create|tbb::|#pragma omp|Eigen::|SimplicialLDLT|SparseLU|polysolve|[Ff]allback|FALLBACK|use_cpu|catch *[(] *[.][.][.] *[)]'
-scan() { grep -rnE "$PAT" "$1/guest" "$1/kernels" 2>/dev/null; }
+scan() { grep -rnEI --exclude-dir=.lake "$PAT" "$1/guest" "$1/kernels" 2>/dev/null; }
 if [ "$1" = "--self-test" ]; then
   t=$(mktemp -d) || exit 2
   mkdir -p "$t/guest" "$t/kernels"
