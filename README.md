@@ -6,9 +6,9 @@ The cloth-fit stage as a godot-sandbox guest whose compute runs on the GPU: a ga
 
 It takes the SIGGRAPH 2025 garment-retargeting method (`sinew-mocap/solve`, `core/cloth-fit`, a trimmed PolyFEM fork) and rebuilds its solver as kernels authored in Lean, lowered through Slang to SPIR-V, and driven from a riscv64 guest through `contract-ggml-rd` and `contract-guest-runtime`.
 
-## No CPU path
+## No CPU path, no fallback
 
-There is no CPU solver in this repository and none may be added. See [BLOCKLIST.md](BLOCKLIST.md). The reference for what the kernels must compute is the PolyFEM code in `core/cloth-fit`, run outside the guest as a test oracle only.
+There is no CPU solver in this repository and none may be added, and nothing falls back: a missing GPU, kernel or buffer crashes the guest with a named error, as in Erlang. See [BLOCKLIST.md](BLOCKLIST.md). The reference for what the kernels must compute is the PolyFEM code in `core/cloth-fit`, run outside the guest as a test oracle only.
 
 ## Status
 
