@@ -1,0 +1,1561 @@
+-- The C compiler identification is Clang 23.1.4
+-- The CXX compiler identification is Clang 23.1.4
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at cmake/polyfem/polyfem_cpm_cache.cmake:17 (file):
+  Given path:
+
+    /Users/ernest.lee/.cache/CPM
+
+  does not refer to an existing path on disk.
+Call Stack (most recent call first):
+  CMakeLists.txt:112 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Performing Test IS_SUPPORTED_-fdiagnostics-color-always
+-- Performing Test IS_SUPPORTED_-fdiagnostics-color-always - Success
+-- Performing Test IS_SUPPORTED_-fcolor-diagnostics
+-- Performing Test IS_SUPPORTED_-fcolor-diagnostics - Success
+-- Adding global flags: $<$<COMPILE_LANGUAGE:CXX>:-fdiagnostics-color=always>;$<$<COMPILE_LANGUAGE:CXX>:-fcolor-diagnostics>
+-- Third-party: creating target 'polysolve'
+-- Downloading CPM.cmake to /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake
+-- CPM: Adding package polysolve@0 (ee553dc6a330ef70bcc6ba2f05653fecd201c05f to /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(polysolve) is deprecated, call
+  FetchContent_MakeAvailable(polysolve) instead.  Policy CMP0169 can be set
+  to OLD to allow FetchContent_Populate(polysolve) to be called directly for
+  now, but the ability to call it with declared details will be removed
+  completely in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  cmake/recipes/polysolve.cmake:20 (CPMAddPackage)
+  CMakeLists.txt:229 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Adding global flags: $<$<COMPILE_LANGUAGE:CXX>:-fdiagnostics-color=always>;$<$<COMPILE_LANGUAGE:CXX>:-fcolor-diagnostics>
+-- CPM: polysolve: Adding package eigen@0 (969c31eefcdfaab11da763bea3f7502086673ab0 to /Users/ernest.lee/.cache/CPM/eigen/2e68522bbe453e136c9b281a06f112155cbeafd8)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(eigen) is deprecated, call
+  FetchContent_MakeAvailable(eigen) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(eigen) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/CMakeLists.txt:191 (CPMAddPackage)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Looking for dgemm_
+-- Looking for dgemm_ - found
+-- Found BLAS: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/System/Library/Frameworks/Accelerate.framework
+-- Looking for cheev_
+-- Looking for cheev_ - found
+-- Found LAPACK: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/System/Library/Frameworks/Accelerate.framework;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/System/Library/Frameworks/Accelerate.framework
+-- Third-party: creating target 'Eigen3::Eigen'
+CMake Warning at /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:317 (message):
+  CPM: polysolve: Requires a newer version of eigen (3.4.0) than currently
+  included (0).
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:616 (cpm_check_if_package_already_added)
+  cmake/recipes/eigen.cmake:27 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/CMakeLists.txt:204 (include)
+
+
+-- Third-party: creating target 'spdlog::spdlog'
+-- CPM: polysolve: Adding package spdlog@1.12.0 (v1.12.0 to /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(spdlog) is deprecated, call
+  FetchContent_MakeAvailable(spdlog) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(spdlog) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  cmake/recipes/spdlog.cmake:26 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/CMakeLists.txt:208 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Build spdlog: 1.12.0
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Build type: Release
+-- Generating install
+-- Patching spdlog bundled fmt ostream.h for libc++/<__std_stream>
+-- Third-party: creating target 'nlohmann_json::nlohmann_json'
+-- CPM: polysolve: Adding package nlohmann_json@ ( to /Users/ernest.lee/.cache/CPM/nlohmann_json/3cc46c5b3b30780707857320f5d2655b293c4330)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(nlohmann_json) is deprecated, call
+  FetchContent_MakeAvailable(nlohmann_json) instead.  Policy CMP0169 can be
+  set to OLD to allow FetchContent_Populate(nlohmann_json) to be called
+  directly for now, but the ability to call it with declared details will be
+  removed completely in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/cmake/recipes/json.cmake:22 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/CMakeLists.txt:212 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Third-party: creating target 'jse::jse'
+-- CPM: polysolve: Adding package json-spec-engine@0 (49f1a30f8c2912814916ec3d6108a649b23cb243 to /Users/ernest.lee/.cache/CPM/json-spec-engine/12d58b2ee49b30ef626202c753c7822cc3200a97)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(json-spec-engine) is deprecated, call
+  FetchContent_MakeAvailable(json-spec-engine) instead.  Policy CMP0169 can
+  be set to OLD to allow FetchContent_Populate(json-spec-engine) to be called
+  directly for now, but the ability to call it with declared details will be
+  removed completely in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  cmake/recipes/jse.cmake:11 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/CMakeLists.txt:216 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Performing Test IS_SUPPORTED_-Wall
+-- Performing Test IS_SUPPORTED_-Wall - Success
+-- Performing Test IS_SUPPORTED_-Wextra
+-- Performing Test IS_SUPPORTED_-Wextra - Success
+-- Performing Test IS_SUPPORTED_-pedantic
+-- Performing Test IS_SUPPORTED_-pedantic - Success
+-- Performing Test IS_SUPPORTED_-Wunused
+-- Performing Test IS_SUPPORTED_-Wunused - Success
+-- Performing Test IS_SUPPORTED_-Wno-long-long
+-- Performing Test IS_SUPPORTED_-Wno-long-long - Success
+-- Performing Test IS_SUPPORTED_-Wpointer-arith
+-- Performing Test IS_SUPPORTED_-Wpointer-arith - Success
+-- Performing Test IS_SUPPORTED_-Wformat-2
+-- Performing Test IS_SUPPORTED_-Wformat-2 - Success
+-- Performing Test IS_SUPPORTED_-Wuninitialized
+-- Performing Test IS_SUPPORTED_-Wuninitialized - Success
+-- Performing Test IS_SUPPORTED_-Wcast-qual
+-- Performing Test IS_SUPPORTED_-Wcast-qual - Success
+-- Performing Test IS_SUPPORTED_-Wmissing-noreturn
+-- Performing Test IS_SUPPORTED_-Wmissing-noreturn - Success
+-- Performing Test IS_SUPPORTED_-Wmissing-format-attribute
+-- Performing Test IS_SUPPORTED_-Wmissing-format-attribute - Success
+-- Performing Test IS_SUPPORTED_-Wredundant-decls
+-- Performing Test IS_SUPPORTED_-Wredundant-decls - Success
+-- Performing Test IS_SUPPORTED_-Werror-implicit
+-- Performing Test IS_SUPPORTED_-Werror-implicit - Success
+-- Performing Test IS_SUPPORTED_-Werror-nonnull
+-- Performing Test IS_SUPPORTED_-Werror-nonnull - Success
+-- Performing Test IS_SUPPORTED_-Werror-init-self
+-- Performing Test IS_SUPPORTED_-Werror-init-self - Success
+-- Performing Test IS_SUPPORTED_-Werror-main
+-- Performing Test IS_SUPPORTED_-Werror-main - Success
+-- Performing Test IS_SUPPORTED_-Werror-missing-braces
+-- Performing Test IS_SUPPORTED_-Werror-missing-braces - Success
+-- Performing Test IS_SUPPORTED_-Werror-sequence-point
+-- Performing Test IS_SUPPORTED_-Werror-sequence-point - Success
+-- Performing Test IS_SUPPORTED_-Werror-return-type
+-- Performing Test IS_SUPPORTED_-Werror-return-type - Success
+-- Performing Test IS_SUPPORTED_-Werror-trigraphs
+-- Performing Test IS_SUPPORTED_-Werror-trigraphs - Success
+-- Performing Test IS_SUPPORTED_-Werror-array-bounds
+-- Performing Test IS_SUPPORTED_-Werror-array-bounds - Success
+-- Performing Test IS_SUPPORTED_-Werror-write-strings
+-- Performing Test IS_SUPPORTED_-Werror-write-strings - Success
+-- Performing Test IS_SUPPORTED_-Werror-address
+-- Performing Test IS_SUPPORTED_-Werror-address - Success
+-- Performing Test IS_SUPPORTED_-Werror-int-to-pointer-cast
+-- Performing Test IS_SUPPORTED_-Werror-int-to-pointer-cast - Success
+-- Performing Test IS_SUPPORTED_-Werror-pointer-to-int-cast
+-- Performing Test IS_SUPPORTED_-Werror-pointer-to-int-cast - Success
+-- Performing Test IS_SUPPORTED_-Wno-unused-variable
+-- Performing Test IS_SUPPORTED_-Wno-unused-variable - Success
+-- Performing Test IS_SUPPORTED_-Wunused-but-set-variable
+-- Performing Test IS_SUPPORTED_-Wunused-but-set-variable - Success
+-- Performing Test IS_SUPPORTED_-Wno-unused-parameter
+-- Performing Test IS_SUPPORTED_-Wno-unused-parameter - Success
+-- Performing Test IS_SUPPORTED_-Wno-old-style-cast
+-- Performing Test IS_SUPPORTED_-Wno-old-style-cast - Success
+-- Performing Test IS_SUPPORTED_-Wshadow
+-- Performing Test IS_SUPPORTED_-Wshadow - Success
+-- Performing Test IS_SUPPORTED_-Wstrict-null-sentinel
+-- Performing Test IS_SUPPORTED_-Wstrict-null-sentinel - Failed
+-- Performing Test IS_SUPPORTED_-Woverloaded-virtual
+-- Performing Test IS_SUPPORTED_-Woverloaded-virtual - Success
+-- Performing Test IS_SUPPORTED_-Wsign-promo
+-- Performing Test IS_SUPPORTED_-Wsign-promo - Success
+-- Performing Test IS_SUPPORTED_-Wstack-protector
+-- Performing Test IS_SUPPORTED_-Wstack-protector - Success
+-- Performing Test IS_SUPPORTED_-Wstrict-aliasing
+-- Performing Test IS_SUPPORTED_-Wstrict-aliasing - Success
+-- Performing Test IS_SUPPORTED_-Wstrict-aliasing-2
+-- Performing Test IS_SUPPORTED_-Wstrict-aliasing-2 - Success
+-- Performing Test IS_SUPPORTED_-Wswitch-default
+-- Performing Test IS_SUPPORTED_-Wswitch-default - Success
+-- Performing Test IS_SUPPORTED_-Wswitch-enum
+-- Performing Test IS_SUPPORTED_-Wswitch-enum - Success
+-- Performing Test IS_SUPPORTED_-Wswitch-unreachable
+-- Performing Test IS_SUPPORTED_-Wswitch-unreachable - Failed
+-- Performing Test IS_SUPPORTED_-Wcast-align
+-- Performing Test IS_SUPPORTED_-Wcast-align - Success
+-- Performing Test IS_SUPPORTED_-Wdisabled-optimization
+-- Performing Test IS_SUPPORTED_-Wdisabled-optimization - Success
+-- Performing Test IS_SUPPORTED_-Winvalid-pch
+-- Performing Test IS_SUPPORTED_-Winvalid-pch - Success
+-- Performing Test IS_SUPPORTED_-Wpacked
+-- Performing Test IS_SUPPORTED_-Wpacked - Success
+-- Performing Test IS_SUPPORTED_-Wno-padded
+-- Performing Test IS_SUPPORTED_-Wno-padded - Success
+-- Performing Test IS_SUPPORTED_-Wstrict-overflow
+-- Performing Test IS_SUPPORTED_-Wstrict-overflow - Success
+-- Performing Test IS_SUPPORTED_-Wstrict-overflow-2
+-- Performing Test IS_SUPPORTED_-Wstrict-overflow-2 - Success
+-- Performing Test IS_SUPPORTED_-Wctor-dtor-privacy
+-- Performing Test IS_SUPPORTED_-Wctor-dtor-privacy - Success
+-- Performing Test IS_SUPPORTED_-Wlogical-op
+-- Performing Test IS_SUPPORTED_-Wlogical-op - Failed
+-- Performing Test IS_SUPPORTED_-Wnoexcept
+-- Performing Test IS_SUPPORTED_-Wnoexcept - Failed
+-- Performing Test IS_SUPPORTED_-Wnon-virtual-dtor
+-- Performing Test IS_SUPPORTED_-Wnon-virtual-dtor - Success
+-- Performing Test IS_SUPPORTED_-Wdelete-non-virtual-dtor
+-- Performing Test IS_SUPPORTED_-Wdelete-non-virtual-dtor - Success
+-- Performing Test IS_SUPPORTED_-Werror-non-virtual-dtor
+-- Performing Test IS_SUPPORTED_-Werror-non-virtual-dtor - Success
+-- Performing Test IS_SUPPORTED_-Werror-delete-non-virtual-dtor
+-- Performing Test IS_SUPPORTED_-Werror-delete-non-virtual-dtor - Success
+-- Performing Test IS_SUPPORTED_-Wno-sign-compare
+-- Performing Test IS_SUPPORTED_-Wno-sign-compare - Success
+-- Performing Test IS_SUPPORTED_-Wnull-dereference
+-- Performing Test IS_SUPPORTED_-Wnull-dereference - Success
+-- Performing Test IS_SUPPORTED_-fdelete-null-pointer-checks
+-- Performing Test IS_SUPPORTED_-fdelete-null-pointer-checks - Success
+-- Performing Test IS_SUPPORTED_-Wduplicated-cond
+-- Performing Test IS_SUPPORTED_-Wduplicated-cond - Failed
+-- Performing Test IS_SUPPORTED_-Wmisleading-indentation
+-- Performing Test IS_SUPPORTED_-Wmisleading-indentation - Success
+-- Performing Test IS_SUPPORTED_-fno-omit-frame-pointer
+-- Performing Test IS_SUPPORTED_-fno-omit-frame-pointer - Success
+-- Performing Test IS_SUPPORTED_-fno-optimize-sibling-calls
+-- Performing Test IS_SUPPORTED_-fno-optimize-sibling-calls - Success
+-- Performing Test IS_SUPPORTED_-Wno-missing-noreturn
+-- Performing Test IS_SUPPORTED_-Wno-missing-noreturn - Success
+-- Performing Test IS_SUPPORTED_-Wno-shadow
+-- Performing Test IS_SUPPORTED_-Wno-shadow - Success
+-- Performing Test IS_SUPPORTED_-Wno-switch-enum
+-- Performing Test IS_SUPPORTED_-Wno-switch-enum - Success
+-- Performing Test IS_SUPPORTED_-Wno-unused-command-line-argument
+-- Performing Test IS_SUPPORTED_-Wno-unused-command-line-argument - Success
+-- Performing Test IS_SUPPORTED_-Wno-unused-function
+-- Performing Test IS_SUPPORTED_-Wno-unused-function - Success
+-- Performing Test IS_SUPPORTED_-Wno-unused-private-field
+-- Performing Test IS_SUPPORTED_-Wno-unused-private-field - Success
+-- Performing Test IS_SUPPORTED_-Wno-unused-lambda-capture
+-- Performing Test IS_SUPPORTED_-Wno-unused-lambda-capture - Success
+-- Performing Test IS_SUPPORTED_-Wno-reorder-ctor
+-- Performing Test IS_SUPPORTED_-Wno-reorder-ctor - Success
+-- Performing Test IS_SUPPORTED_-Wno-missing-field-initializers
+-- Performing Test IS_SUPPORTED_-Wno-missing-field-initializers - Success
+-- Third-party: creating target 'LBGFSpp::LBGFSpp'
+-- CPM: polysolve: Adding package lbfgspp@0.2.0 (v0.2.0 to /Users/ernest.lee/.cache/CPM/lbfgspp/4070b1abd12b2b0dc71ba965796709fd61addc96)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(lbfgspp) is deprecated, call
+  FetchContent_MakeAvailable(lbfgspp) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(lbfgspp) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/cmake/recipes/LBFGSpp.cmake:11 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/CMakeLists.txt:315 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Third-party: creating target 'finitediff::finitediff'
+-- CPM: polysolve: Adding package finite-diff@1.0.2 (v1.0.2 to /Users/ernest.lee/.cache/CPM/finite-diff/1d94bd80238c9925fb3a3e08f890692c283943ce)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(finite-diff) is deprecated, call
+  FetchContent_MakeAvailable(finite-diff) instead.  Policy CMP0169 can be set
+  to OLD to allow FetchContent_Populate(finite-diff) to be called directly
+  for now, but the ability to call it with declared details will be removed
+  completely in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/cmake/recipes/finite-diff.cmake:11 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/CMakeLists.txt:319 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Performing Test IS_SUPPORTED_-Wswitch
+-- Performing Test IS_SUPPORTED_-Wswitch - Success
+-- PolyFEM: staged 14 JSON spec(s) into /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/json-specs
+-- Third-party: creating target 'igl::core'
+-- Found Patch: /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/bin/patch
+-- CPM: Adding package libigl@2.5.0 (v2.5.0 to /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(libigl) is deprecated, call
+  FetchContent_MakeAvailable(libigl) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(libigl) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  cmake/recipes/libigl.cmake:50 (CPMAddPackage)
+  CMakeLists.txt:248 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Creating target: igl::core (igl_core)
+-- Creating target: igl::predicates (igl_predicates)
+-- Third-party: creating target 'predicates::predicates'
+CMake Deprecation Warning at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Creating target: igl_restricted::triangle (igl_restricted_triangle)
+-- Third-party: creating target 'triangle::triangle'
+CMake Deprecation Warning at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/triangle-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Third-party: creating target 'ipc::toolkit'
+-- CPM: Adding package ipc-toolkit@0 (993e7e0fadb7073e1331ffa88ae288758d704d2e to /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(ipc-toolkit) is deprecated, call
+  FetchContent_MakeAvailable(ipc-toolkit) instead.  Policy CMP0169 can be set
+  to OLD to allow FetchContent_Populate(ipc-toolkit) to be called directly
+  for now, but the ability to call it with declared details will be removed
+  completely in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  cmake/recipes/ipc_toolkit.cmake:11 (CPMAddPackage)
+  CMakeLists.txt:261 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Adding global flags: $<$<COMPILE_LANGUAGE:CXX>:-fdiagnostics-color=always>;$<$<COMPILE_LANGUAGE:CXX>:-fcolor-diagnostics>
+-- Third-party: creating target 'TBB::tbb' (OneTBB)
+-- CPM: ipc-toolkit: Adding package oneTBB@2021.9.0 (v2021.9.0 to /Users/ernest.lee/.cache/CPM/onetbb/820136c269eb2082624286116181ed3abf743ac8)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(oneTBB) is deprecated, call
+  FetchContent_MakeAvailable(oneTBB) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(oneTBB) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  cmake/recipes/onetbb.cmake:69 (CPMAddPackage)
+  cmake/recipes/onetbb.cmake:74 (onetbb_import_target)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/CMakeLists.txt:142 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at /Users/ernest.lee/.cache/CPM/onetbb/820136c269eb2082624286116181ed3abf743ac8/CMakeLists.txt:15 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Warning at /Users/ernest.lee/.cache/CPM/onetbb/820136c269eb2082624286116181ed3abf743ac8/CMakeLists.txt:116 (message):
+  You are building oneTBB as a static library.  This is highly discouraged
+  and such configuration is not supported.  Consider building a dynamic
+  library to avoid unforeseen issues.
+
+
+-- Checking for one of the modules 'hwloc'
+-- TBBBind build targets are disabled due to unsupported environment
+-- Third-party: creating target 'tight_inclusion::tight_inclusion'
+-- CPM: ipc-toolkit: Adding package Tight-Inclusion@1.0.5 (v1.0.5 to /Users/ernest.lee/.cache/CPM/tight-inclusion/d3e64701b8a639fe4618c844bee41bda79e79fb1)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(Tight-Inclusion) is deprecated, call
+  FetchContent_MakeAvailable(Tight-Inclusion) instead.  Policy CMP0169 can be
+  set to OLD to allow FetchContent_Populate(Tight-Inclusion) to be called
+  directly for now, but the ability to call it with declared details will be
+  removed completely in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/cmake/recipes/tight_inclusion.cmake:10 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/CMakeLists.txt:146 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Adding global flags: $<$<COMPILE_LANGUAGE:CXX>:-fdiagnostics-color=always>;$<$<COMPILE_LANGUAGE:CXX>:-fcolor-diagnostics>
+-- Performing Test IS_SUPPORTED_-Wno-maybe-uninitialized
+-- Performing Test IS_SUPPORTED_-Wno-maybe-uninitialized - Failed
+-- Performing Test IS_SUPPORTED_-Wno-unused-but-set-variable
+-- Performing Test IS_SUPPORTED_-Wno-unused-but-set-variable - Success
+-- Searching for AVX...
+-- Third-party: creating target 'scalable_ccd::scalable_ccd'
+-- CPM: ipc-toolkit: Adding package scalable-ccd@0 (60692d7cbc03390a3a198792a3ff2b869c5da05b to /Users/ernest.lee/.cache/CPM/scalable-ccd/02e87ed5e48112899cf6e1459701716be5862680)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(scalable-ccd) is deprecated, call
+  FetchContent_MakeAvailable(scalable-ccd) instead.  Policy CMP0169 can be
+  set to OLD to allow FetchContent_Populate(scalable-ccd) to be called
+  directly for now, but the ability to call it with declared details will be
+  removed completely in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/cmake/recipes/scalable_ccd.cmake:12 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/CMakeLists.txt:150 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Adding global flags: $<$<COMPILE_LANGUAGE:CXX>:-fdiagnostics-color=always>;$<$<COMPILE_LANGUAGE:CXX>:-fcolor-diagnostics>
+-- Performing Test IS_SUPPORTED_-Wpedantic
+-- Performing Test IS_SUPPORTED_-Wpedantic - Success
+-- Performing Test IS_SUPPORTED_-Werror-enum-conversion
+-- Performing Test IS_SUPPORTED_-Werror-enum-conversion - Success
+-- Performing Test IS_SUPPORTED_-Wfloat-conversion
+-- Performing Test IS_SUPPORTED_-Wfloat-conversion - Success
+-- Performing Test IS_SUPPORTED_-Warray-bounds
+-- Performing Test IS_SUPPORTED_-Warray-bounds - Success
+-- Performing Test IS_SUPPORTED_-Werror-inconsistent-missing-override
+-- Performing Test IS_SUPPORTED_-Werror-inconsistent-missing-override - Success
+-- Performing Test IS_SUPPORTED_-Werror-return-stack-address
+-- Performing Test IS_SUPPORTED_-Werror-return-stack-address - Success
+-- Performing Test IS_SUPPORTED_-Wunused-variable
+-- Performing Test IS_SUPPORTED_-Wunused-variable - Success
+-- Performing Test IS_SUPPORTED_-Wold-style-cast
+-- Performing Test IS_SUPPORTED_-Wold-style-cast - Success
+-- Performing Test IS_SUPPORTED_-Wmissing-include-dirs
+-- Performing Test IS_SUPPORTED_-Wmissing-include-dirs - Success
+-- Performing Test IS_SUPPORTED_-Wno-redundant-decls
+-- Performing Test IS_SUPPORTED_-Wno-redundant-decls - Success
+-- Third-party: creating target 'simple_bvh::simple_bvh'
+-- CPM: ipc-toolkit: Adding package SimpleBVH@0 (e1a931337a9e07e8bd2d2e8bbdfd7e54bc850df5 to /Users/ernest.lee/.cache/CPM/simplebvh/72440d07837bfd3a5f6f0bf926a395a2c250630e)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(SimpleBVH) is deprecated, call
+  FetchContent_MakeAvailable(SimpleBVH) instead.  Policy CMP0169 can be set
+  to OLD to allow FetchContent_Populate(SimpleBVH) to be called directly for
+  now, but the ability to call it with declared details will be removed
+  completely in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/cmake/recipes/simple_bvh.cmake:11 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/CMakeLists.txt:161 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Performing Test IS_SUPPORTED_-Wno-pedantic
+-- Performing Test IS_SUPPORTED_-Wno-pedantic - Success
+-- Third-party: creating target 'tsl::robin_map'
+-- CPM: ipc-toolkit: Adding package robin-map@1.2.1 (v1.2.1 to /Users/ernest.lee/.cache/CPM/robin-map/b78c0b87c4df5b0c7c10be5a60353902f4258936)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(robin-map) is deprecated, call
+  FetchContent_MakeAvailable(robin-map) instead.  Policy CMP0169 can be set
+  to OLD to allow FetchContent_Populate(robin-map) to be called directly for
+  now, but the ability to call it with declared details will be removed
+  completely in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/cmake/recipes/robin_map.cmake:10 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/CMakeLists.txt:176 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at /Users/ernest.lee/.cache/CPM/robin-map/b78c0b87c4df5b0c7c10be5a60353902f4258936/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Third-party: creating target 'absl::flat_hash_map'
+-- CPM: ipc-toolkit: Adding package abseil-cpp@20230125.3 (20230125.3 to /Users/ernest.lee/.cache/CPM/abseil-cpp/2067ccce999f831c913871bc83499c79f0dff4a5)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(abseil-cpp) is deprecated, call
+  FetchContent_MakeAvailable(abseil-cpp) instead.  Policy CMP0169 can be set
+  to OLD to allow FetchContent_Populate(abseil-cpp) to be called directly for
+  now, but the ability to call it with declared details will be removed
+  completely in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/cmake/recipes/abseil.cmake:14 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/CMakeLists.txt:182 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX17
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX17 - Success
+-- Third-party: creating target 'filib::filib'
+-- CPM: ipc-toolkit: Adding package filib@0 (1cd377a7c833a68dc47217829e333f4886c5c46d to /Users/ernest.lee/.cache/CPM/filib/d7c57a3182f00d31e32fe16572e316159b40246d)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(filib) is deprecated, call
+  FetchContent_MakeAvailable(filib) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(filib) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/cmake/recipes/filib.cmake:10 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/CMakeLists.txt:188 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- SIMD support disabled
+-- PolyFEM: weftfit_retarget solve bridge
+-- Found Python3: /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/bin/python3 (found version "3.15.2") found components: Interpreter
+-- Performing Test IS_SUPPORTED_-Wsuggest-override
+-- Performing Test IS_SUPPORTED_-Wsuggest-override - Success
+-- Third-party: creating target 'CLI11::CLI11'
+-- CPM: Adding package CLI11@2.3.2 (v2.3.2 to /Users/ernest.lee/.cache/CPM/cli11/9e6fd3fcb946a91f4a10e874dc9d09753d96ed7f)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(CLI11) is deprecated, call
+  FetchContent_MakeAvailable(CLI11) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(CLI11) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  cmake/recipes/cli11.cmake:22 (CPMAddPackage)
+  CMakeLists.txt:475 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at /Users/ernest.lee/.cache/CPM/cli11/9e6fd3fcb946a91f4a10e874dc9d09753d96ed7f/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Third-party: creating target 'Catch2::Catch2'
+-- CPM: Adding package Catch2@3.4.0 (v3.4.0 to /Users/ernest.lee/.cache/CPM/catch2/fc2d6e70e6b1b691860849b5eeca5a7b84d30f6f)
+CMake Warning (dev) at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(Catch2) is deprecated, call
+  FetchContent_MakeAvailable(Catch2) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(Catch2) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:1008 (FetchContent_Populate)
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:802 (cpm_fetch_package)
+  cmake/recipes/catch2.cmake:27 (CPMAddPackage)
+  tests/CMakeLists.txt:25 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Performing Test HAVE_FLAG__ffile_prefix_map__Users_ernest_lee__cache_CPM_catch2_fc2d6e70e6b1b691860849b5eeca5a7b84d30f6f__
+-- Performing Test HAVE_FLAG__ffile_prefix_map__Users_ernest_lee__cache_CPM_catch2_fc2d6e70e6b1b691860849b5eeca5a7b84d30f6f__ - Success
+-- Configuring done (113.7s)
+-- Generating done (0.2s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_POLICY_VERSION_MINIMUM
+    USE_BLOSC
+    USE_ZLIB
+
+
+-- Build files have been written to: /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build
+[0/2] Re-checking globbed directories...
+[1/300] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_base.dir/internal/unscaledcycleclock.cc.o
+[2/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/utf8.cc.o
+[3/300] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_base.dir/internal/cycleclock.cc.o
+[4/300] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_spinlock_wait.dir/internal/spinlock_wait.cc.o
+[5/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/ostringstream.cc.o
+[6/300] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_log_severity.dir/log_severity.cc.o
+[7/300] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_raw_logging_internal.dir/internal/raw_logging.cc.o
+[8/300] Building CXX object _deps/abseil-cpp-build/absl/numeric/CMakeFiles/absl_int128.dir/int128.cc.o
+[9/300] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_throw_delegate.dir/internal/throw_delegate.cc.o
+[10/300] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_base.dir/internal/spinlock.cc.o
+[11/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/escaping.cc.o
+[12/300] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_base.dir/internal/thread_identity.cc.o
+[13/300] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_base.dir/internal/sysinfo.cc.o
+[14/300] Linking CXX static library _deps/abseil-cpp-build/absl/base/libabsl_spinlock_wait.a
+[15/300] Linking CXX static library _deps/abseil-cpp-build/absl/base/libabsl_log_severity.a
+[16/300] Linking CXX static library _deps/abseil-cpp-build/absl/base/libabsl_raw_logging_internal.a
+[17/300] Linking CXX static library _deps/abseil-cpp-build/absl/base/libabsl_base.a
+[18/300] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/file_sinks.cpp:9:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/details/file_helper-inl.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/details/file_helper.h:6:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[19/300] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/stdout_sinks.cpp:11:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async_logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[20/300] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/color_sinks.cpp:11:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async_logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[21/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/allocator.cpp.o
+[22/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/itt_notify.cpp.o
+[23/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/dynamic_link.cpp.o
+[24/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/exception.cpp.o
+[25/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/address_waiter.cpp.o
+[26/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/concurrent_bounded_queue.cpp.o
+[27/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/arena_slot.cpp.o
+[28/300] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/async.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/async.cpp:8:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async_logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[29/300] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/cfg.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/cfg.cpp:8:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/cfg/helpers-inl.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/cfg/helpers.h:6:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[30/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/main.cpp.o
+[31/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/misc_ex.cpp.o
+[32/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/misc.cpp.o
+[33/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/global_control.cpp.o
+[34/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/governor.cpp.o
+[35/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/rml_tbb.cpp.o
+[36/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/arena.cpp.o
+[37/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/parallel_pipeline.cpp.o
+[38/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/semaphore.cpp.o
+[39/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/version.cpp.o
+[40/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/rtm_mutex.cpp.o
+[41/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/profiling.cpp.o
+[42/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/market.cpp.o
+[43/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/private_server.cpp.o
+[44/300] Linking CXX static library _deps/abseil-cpp-build/absl/base/libabsl_throw_delegate.a
+[45/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/observer_proxy.cpp.o
+[46/300] Linking CXX static library _deps/abseil-cpp-build/absl/numeric/libabsl_int128.a
+[47/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/rtm_rw_mutex.cpp.o
+[48/300] Building CXX object _deps/abseil-cpp-build/absl/hash/CMakeFiles/absl_low_level_hash.dir/internal/low_level_hash.cc.o
+[49/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/small_object_pool.cpp.o
+[50/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/queuing_rw_mutex.cpp.o
+[51/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/ascii.cc.o
+[52/300] Building CXX object _deps/abseil-cpp-build/absl/hash/CMakeFiles/absl_city.dir/internal/city.cc.o
+[53/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/task.cpp.o
+[54/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/internal/charconv_parse.cc.o
+[55/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/task_group_context.cpp.o
+[56/300] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/bundled_fmtlib_format.cpp:11:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format-inl.h:29:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[57/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/internal/damerau_levenshtein_distance.cc.o
+[58/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/internal/memutil.cc.o
+[59/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/internal/stringify_sink.cc.o
+[60/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/match.cc.o
+[61/300] Linking CXX static library _deps/abseil-cpp-build/absl/strings/libabsl_strings_internal.a
+[62/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/internal/charconv_bigint.cc.o
+[63/300] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/task_dispatcher.cpp.o
+[64/300] Building CXX object _deps/abseil-cpp-build/absl/types/CMakeFiles/absl_bad_optional_access.dir/bad_optional_access.cc.o
+[65/300] Building CXX object _deps/abseil-cpp-build/absl/types/CMakeFiles/absl_bad_variant_access.dir/bad_variant_access.cc.o
+[66/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/charconv.cc.o
+[67/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/escaping.cc.o
+[68/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/AMGCL.cpp.o
+[69/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/HypreSolver.cpp.o
+[70/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/string_view.cc.o
+[71/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/Pardiso.cpp.o
+[72/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/str_cat.cc.o
+[73/300] Linking CXX static library clang_23.1_cxx17_64_release/libtbb.a
+[74/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/str_replace.cc.o
+[75/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/str_split.cc.o
+[76/300] Building C object _deps/predicates-build/CMakeFiles/predicates.dir/predicates.c.o
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:709:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  709 | static int grow_expansion(elen, e, b, h)                /* e and h can be the same. */
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:746:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  746 | static int grow_expansion_zeroelim(elen, e, b, h)       /* e and h can be the same. */
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:788:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  788 | static int expansion_sum(elen, e, flen, f, h)
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:837:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  837 | static int expansion_sum_zeroelim1(elen, e, flen, f, h)
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:897:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  897 | static int expansion_sum_zeroelim2(elen, e, flen, f, h)
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:954:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  954 | static int fast_expansion_sum(elen, e, flen, f, h)           /* h cannot be e or f. */
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1031:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1031 | static int fast_expansion_sum_zeroelim(elen, e, flen, f, h)  /* h cannot be e or f. */
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1116:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1116 | static int linear_expansion_sum(elen, e, flen, f, h)         /* h cannot be e or f. */
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1180:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1180 | static int linear_expansion_sum_zeroelim(elen, e, flen, f, h)/* h cannot be e or f. */
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1254:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1254 | static int scale_expansion(elen, e, b, h)            /* e and h cannot be the same. */
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1303:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1303 | static int scale_expansion_zeroelim(elen, e, b, h)   /* e and h cannot be the same. */
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1358:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1358 | static int compress(elen, e, h)                         /* e and h may be the same. */
+      |            ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1403:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1403 | static REAL estimate(elen, e)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1443:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1443 | static REAL orient2dfast(pa, pb, pc)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1457:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1457 | static REAL orient2dexact(pa, pb, pc)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1502:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1502 | static REAL orient2dslow(pa, pb, pc)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1546:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1546 | static REAL orient2dadapt(pa, pb, pc, detsum)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1630:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1630 | REAL orient2d(pa, pb, pc)
+      |      ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1695:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1695 | static REAL orient3dfast(pa, pb, pc, pd)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1720:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1720 | static REAL orient3dexact(pa, pb, pc, pd)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1801:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1801 | static REAL orient3dslow(pa, pb, pc, pd)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:1897:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1897 | static REAL orient3dadapt(pa, pb, pc, pd, permanent)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:2302:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2302 | REAL orient3d(pa, pb, pc, pd)
+      |      ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:2373:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2373 | static REAL incirclefast(pa, pb, pc, pd)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:2400:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2400 | static REAL incircleexact(pa, pb, pc, pd)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:2502:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2502 | static REAL incircleslow(pa, pb, pc, pd)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:2662:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2662 | static REAL incircleadapt(pa, pb, pc, pd, permanent)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:3236:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3236 | REAL incircle(pa, pb, pc, pd)
+      |      ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:3309:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3309 | static REAL inspherefast(pa, pb, pc, pd, pe)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:3357:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3357 | static REAL insphereexact(pa, pb, pc, pd, pe)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:3614:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3614 | static REAL insphereslow(pa, pb, pc, pd, pe)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:3948:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3948 | static REAL insphereadapt(pa, pb, pc, pd, pe, permanent)
+      |             ^
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/predicates.c:4168:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 4168 | REAL insphere(pa, pb, pc, pd, pe)
+      |      ^
+33 warnings generated.
+[77/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/numbers.cc.o
+[78/300] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/substitute.cc.o
+[79/300] Building CXX object _deps/json-spec-engine-build/CMakeFiles/jse.dir/src/jse/jse.cpp.o
+[80/300] Linking CXX static library _deps/json-spec-engine-build/libjse.a
+[81/300] Building CXX object _deps/tight-inclusion-build/CMakeFiles/tight_inclusion.dir/src/tight_inclusion/avx.cpp.o
+[82/300] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/spdlog.cpp:8:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/spdlog-inl.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/spdlog.h:12:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[83/300] Building CXX object _deps/tight-inclusion-build/CMakeFiles/tight_inclusion.dir/src/tight_inclusion/logger.cpp.o
+[84/300] Linking CXX static library _deps/spdlog-build/libspdlog.a
+[85/300] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/utils/profiler.cpp.o
+[86/300] Building CXX object _deps/tight-inclusion-build/CMakeFiles/tight_inclusion.dir/src/tight_inclusion/ccd.cpp.o
+[87/300] Building CXX object _deps/tight-inclusion-build/CMakeFiles/tight_inclusion.dir/src/tight_inclusion/interval.cpp.o
+[88/300] Building CXX object _deps/simplebvh-build/CMakeFiles/simple_bvh.dir/src/SimpleBVH/Morton.cpp.o
+[89/300] Linking CXX static library _deps/abseil-cpp-build/absl/hash/libabsl_city.a
+[90/300] Linking CXX static library _deps/abseil-cpp-build/absl/hash/libabsl_low_level_hash.a
+[91/300] Linking CXX static library _deps/abseil-cpp-build/absl/strings/libabsl_strings.a
+[92/300] Linking CXX static library _deps/abseil-cpp-build/absl/types/libabsl_bad_optional_access.a
+[93/300] Linking CXX static library _deps/abseil-cpp-build/absl/types/libabsl_bad_variant_access.a
+[94/300] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/utils/merge_local_overlaps.cpp.o
+[95/300] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/utils/logger.cpp.o
+[96/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_acos.c.o
+[97/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_erf.c.o
+[98/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_acsh.c.o
+[99/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_acot.c.o
+[100/300] Building CXX object _deps/abseil-cpp-build/absl/hash/CMakeFiles/absl_hash.dir/internal/hash.cc.o
+[101/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_acth.c.o
+[102/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_asin.c.o
+[103/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_asnh.c.o
+[104/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_atan.c.o
+[105/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_atnh.c.o
+[106/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_cosh.c.o
+[107/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_cos.c.o
+[108/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_cot.c.o
+[109/300] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/broad_phase/aabb.cpp.o
+[110/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_coth.c.o
+[111/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_exp.c.o
+[112/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_ex10.c.o
+[113/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_expm.c.o
+[114/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_exp2.c.o
+[115/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_log.c.o
+[116/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_lg10.c.o
+[117/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_lg1p.c.o
+[118/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_log2.c.o
+[119/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_sin.c.o
+[120/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_sinh.c.o
+[121/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_sqr.c.o
+[122/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_sqrt.c.o
+[123/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_tanh.c.o
+[124/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/j_tan.c.o
+[125/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_acos.c.o
+[126/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_erf.c.o
+[127/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_acsh.c.o
+[128/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_acot.c.o
+[129/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_acth.c.o
+[130/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_asin.c.o
+[131/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_asnh.c.o
+[132/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_atan.c.o
+[133/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_atnh.c.o
+[134/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_atn1.c.o
+[135/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_cos.c.o
+[136/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/FEMSolver.cpp.o
+[137/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_cos1.c.o
+[138/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_cosh.c.o
+[139/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_coth.c.o
+[140/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_cot.c.o
+[141/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_ep1.c.o
+[142/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_exp.c.o
+[143/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_epm1.c.o
+[144/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_glbl.c.o
+[145/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_exp2.c.o
+[146/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_ex10.c.o
+[147/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_expm.c.o
+[148/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_log1.c.o
+[149/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_log.c.o
+[150/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_log2.c.o
+[151/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_lg10.c.o
+[152/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_pred.c.o
+[153/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_rtrg.c.o
+[154/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_sin1.c.o
+[155/300] Building CXX object _deps/finite-diff-build/CMakeFiles/finitediff_finitediff.dir/src/finitediff.cpp.o
+[156/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_sin.c.o
+[157/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_sinh.c.o
+[158/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_sqr.c.o
+[159/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_sqrt.c.o
+[160/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_succ.c.o
+[161/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_tanh.c.o
+[162/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_tan.c.o
+[163/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_scan.c.o
+[164/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_cth1.c.o
+[165/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_prnt.c.o
+[166/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_errm.c.o
+[167/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_ari.c.o
+[168/300] Building C object _deps/filib-build/CMakeFiles/filib_filib.dir/src/q_comp.c.o
+[169/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/Utils.cpp.o
+[170/300] Building CXX object _deps/simplebvh-build/CMakeFiles/simple_bvh.dir/src/SimpleBVH/BVH.cpp.o
+[171/300] Building CXX object _deps/tight-inclusion-build/CMakeFiles/tight_inclusion.dir/src/tight_inclusion/interval_root_finder.cpp.o
+[172/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/Criteria.cpp.o
+[173/300] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/broad_phase/sort_and_sweep.cpp.o
+[174/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/PostStepData.cpp.o
+[175/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/SaddlePointSolver.cpp.o
+[176/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/Problem.cpp.o
+[177/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/GradientDescent.cpp.o
+[178/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/box_constraints/MMAAux.cpp.o
+[179/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/LBFGS.cpp.o
+[180/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/ADAM.cpp.o
+[181/300] Linking CXX static library _deps/finite-diff-build/libfinitediff_finitediff.a
+[182/300] Linking C static library lib/libpredicates.a
+[183/300] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/utils/pca.cpp.o
+[184/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/BoxConstraintSolver.cpp.o
+[185/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/BFGS.cpp.o
+[186/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/barrier/barrier.cpp.o
+[187/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/line_search/Armijo.cpp.o
+[188/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/box_constraints/MMA.cpp.o
+[189/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/barrier/adaptive_stiffness.cpp.o
+[190/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/line_search/NoLineSearch.cpp.o
+[191/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/line_search/RobustArmijo.cpp.o
+[192/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/Newton.cpp.o
+[193/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/Solver.cpp.o
+/Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/src/polysolve/nonlinear/Solver.cpp:586:9: warning: 'switch' missing 'default' label [-Wswitch-default]
+  586 |         switch (gradient_fd_strategy)
+      |         ^
+1 warning generated.
+[194/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/sweep_and_tiniest_queue.cpp.o
+[195/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/line_search/LineSearch.cpp.o
+[196/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ipc.cpp.o
+[197/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/line_search/Backtracking.cpp.o
+[198/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/aabb.cpp.o
+[199/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/box_constraints/LBFGSB.cpp.o
+[200/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/broad_phase.cpp.o
+[201/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collision_mesh.cpp.o
+[202/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/sweep_and_prune.cpp.o
+[203/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/brute_force.cpp.o
+[204/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/aabb.cpp.o
+[205/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/inexact_point_edge.cpp.o
+[206/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/bvh.cpp.o
+[207/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/voxel_size_heuristic.cpp.o
+[208/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/ccd.cpp.o
+[209/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/additive_ccd.cpp.o
+[210/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/edge_face.cpp.o
+[211/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/face_face.cpp.o
+[212/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/point_static_plane.cpp.o
+[213/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/candidates.cpp.o
+[214/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/continuous_collision_candidate.cpp.o
+[215/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/nonlinear_ccd.cpp.o
+[216/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/edge_edge.cpp.o
+[217/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/spatial_hash.cpp.o
+[218/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/edge_vertex.cpp.o
+[219/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/face_vertex.cpp.o
+[220/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/vertex_vertex.cpp.o
+[221/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collisions/collision.cpp.o
+[222/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/hash_grid.cpp.o
+[223/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collisions/edge_edge.cpp.o
+[224/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collisions/plane_vertex.cpp.o
+[225/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/line_line.cpp.o
+[226/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/edge_edge_mollifier.cpp.o
+[227/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/edge_edge.cpp.o
+[228/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/point_edge.cpp.o
+[229/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/smooth_friction_mollifier.cpp.o
+[230/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/point_line.cpp.o
+[231/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collisions/collisions_builder.cpp.o
+[232/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/distance_type.cpp.o
+[233/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/point_point.cpp.o
+[234/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/point_plane.cpp.o
+[235/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collisions/collisions.cpp.o
+[236/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/point_triangle.cpp.o
+[237/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/normal_force_magnitude.cpp.o
+[238/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/friction_collisions.cpp.o
+[239/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/relative_velocity.cpp.o
+[240/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/tangent_basis.cpp.o
+[241/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/closest_point.cpp.o
+[242/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/collisions/edge_edge.cpp.o
+[243/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/collisions/edge_vertex.cpp.o
+[244/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/collisions/friction_collision.cpp.o
+[245/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/collisions/face_vertex.cpp.o
+[246/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/implicits/plane.cpp.o
+[247/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/collisions/vertex_vertex.cpp.o
+[248/300] Linking CXX static library _deps/tight-inclusion-build/libtight_inclusion.a
+[249/300] Linking CXX static library _deps/simplebvh-build/libsimple_bvh.a
+[250/300] Linking CXX static library _deps/scalable-ccd-build/libscalable_ccd.a
+[251/300] Linking CXX static library _deps/abseil-cpp-build/absl/hash/libabsl_hash.a
+[252/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/logger.cpp.o
+[253/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/potentials/barrier_potential.cpp.o
+[254/300] Linking C static library _deps/filib-build/libfilib_filib.a
+[255/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/unordered_map_and_set.cpp.o
+[256/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/area_gradient.cpp.o
+[257/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/autogen/auto_derivatives3.cpp.o
+[258/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/vertex_to_min_edge.cpp.o
+[259/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/interval.cpp.o
+[260/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/autogen/auto_derivatives2.cpp.o
+[261/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/intersection.cpp.o
+[262/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/save_obj.cpp.o
+[263/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/autogen/auto_derivatives1.cpp.o
+[264/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/io/OBJWriter.cpp.o
+[265/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/io/OBJReader.cpp.o
+[266/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/io/MatrixIO.cpp.o
+[267/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/mesh/MeshUtils.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/mesh/MeshUtils.cpp:10:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:319:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  319 |     printf(format,"V",igl::min_size(vV),igl::max_size(vV));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:325:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  325 |     printf(format,"F",igl::min_size(vF),igl::max_size(vF));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:333:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  333 |       printf(format,"CN",igl::min_size(vN),igl::max_size(vN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:343:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  343 |       printf(format,"FN",igl::min_size(vFN),igl::max_size(vFN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:354:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  354 |       printf(format,"TC",igl::min_size(vTC),igl::max_size(vTC));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:364:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  364 |       printf(format,"FTC",igl::min_size(vFTC),igl::max_size(vFTC));
+      |              ^~~~~~
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/mesh/MeshUtils.cpp:10:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:16:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readPLY.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/mesh/MeshUtils.cpp:10:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:19:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:151:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  151 |     switch(simplex_size)
+      |     ^
+12 warnings generated.
+[268/300] Building C object CMakeFiles/polyfem.dir/src/polyfem/utils/getRSS.c.o
+[269/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/potentials/distance_based_potential.cpp.o
+[270/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp.o
+FAILED: [code=1] CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp.o 
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/bin/c++ -DEIGEN_STACK_ALLOCATION_LIMIT=0 -DNOMINMAX -DPOLYFEM_BIG_N=1000 -DPOLYFEM_INPUT_SPEC=\"/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/json-specs/input-spec.json\" -DPOLYFEM_JSON_SPEC_DIR=\"/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/json-specs\" -DPOLYFEM_SMALL_N=80 -DPOLYFEM_SOURCE_DIR=\"/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit\" -DPOLYFEM_WITH_TBB -DPOLYSOLVE_JSON_SPEC_DIR=\"/Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08\" -DPOLYSOLVE_WITH_ACCELERATE -DSPDLOG_COMPILED_LIB -D__TBB_NO_IMPLICIT_LINKAGE=1 -I/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src -I/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/kernels/fit/cpp -I/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt -I/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/retarget_bridge -I/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include -I/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src -I/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-build -isystem /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/src -isystem /Users/ernest.lee/.cache/CPM/eigen/2e68522bbe453e136c9b281a06f112155cbeafd8 -isystem /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include -isystem /Users/ernest.lee/.cache/CPM/nlohmann_json/3cc46c5b3b30780707857320f5d2655b293c4330/include -isystem /Users/ernest.lee/.cache/CPM/json-spec-engine/12d58b2ee49b30ef626202c753c7822cc3200a97/src -isystem /Users/ernest.lee/.cache/CPM/finite-diff/1d94bd80238c9925fb3a3e08f890692c283943ce/src -isystem /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c/src -isystem /Users/ernest.lee/.cache/CPM/onetbb/820136c269eb2082624286116181ed3abf743ac8/src/tbb/../../include -isystem /Users/ernest.lee/.cache/CPM/tight-inclusion/d3e64701b8a639fe4618c844bee41bda79e79fb1/src -isystem /Users/ernest.lee/.cache/CPM/scalable-ccd/02e87ed5e48112899cf6e1459701716be5862680/src -isystem /Users/ernest.lee/.cache/CPM/simplebvh/72440d07837bfd3a5f6f0bf926a395a2c250630e/src -isystem /Users/ernest.lee/.cache/CPM/robin-map/b78c0b87c4df5b0c7c10be5a60353902f4258936/include -isystem /Users/ernest.lee/.cache/CPM/abseil-cpp/2067ccce999f831c913871bc83499c79f0dff4a5 -isystem /Users/ernest.lee/.cache/CPM/filib/d7c57a3182f00d31e32fe16572e316159b40246d/include -O3 -DNDEBUG -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -fPIC -fdiagnostics-color=always -fcolor-diagnostics -Wall -Wextra -pedantic -Wunused -Wno-long-long -Wpointer-arith -Wformat=2 -Wuninitialized -Wcast-qual -Wmissing-format-attribute -Wredundant-decls -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Warray-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Wno-unused-variable -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-old-style-cast -Woverloaded-virtual -Wsign-promo -Wstack-protector -Wstrict-aliasing -Wstrict-aliasing=2 -Wswitch-default -Wcast-align -Wdisabled-optimization -Winvalid-pch -Wpacked -Wno-padded -Wstrict-overflow -Wstrict-overflow=2 -Wctor-dtor-privacy -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Werror=non-virtual-dtor -Werror=delete-non-virtual-dtor -Wno-sign-compare -Wsuggest-override -Wnull-dereference -fdelete-null-pointer-checks -Wmisleading-indentation -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wno-missing-noreturn -Wno-shadow -Wno-switch-enum -Wno-unused-command-line-argument -Wno-unused-function -Wno-unused-private-field -Wno-unused-lambda-capture -Wno-reorder-ctor -Wno-missing-field-initializers -MD -MT CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp.o -MF CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp.o.d -o CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp.o -c /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp:24:
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-prelude.h:302:8: error: 'ISlangUnknown' has virtual functions but non-virtual destructor [-Werror,-Wnon-virtual-dtor]
+  302 | struct ISlangUnknown
+      |        ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp:24:
+In file included from /Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-prelude.h:322:
+In file included from /Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:13:
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:164:60: warning: cast from 'const Vector<T, 3> *' to 'type-parameter-0-0 *' drops const qualifier [-Wcast-qual]
+  164 |     const T& operator[](size_t index) const { return *((T*)(this) + index); }
+      |                                                            ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:198:60: warning: cast from 'const Vector<T, 4> *' to 'type-parameter-0-0 *' drops const qualifier [-Wcast-qual]
+  198 |     const T& operator[](size_t index) const { return *((T*)(this) + index); }
+      |                                                            ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp:24:
+In file included from /Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-prelude.h:322:
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:301:9: warning: 'switch' missing 'default' label [-Wswitch-default]
+  301 |         switch (baseShape)
+      |         ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:340:9: warning: 'switch' missing 'default' label [-Wswitch-default]
+  340 |         switch (baseShape)
+      |         ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:395:8: error: 'ITexture' has virtual functions but non-virtual destructor [-Werror,-Wnon-virtual-dtor]
+  395 | struct ITexture
+      |        ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:823:8: error: 'IRWTexture' has virtual functions but non-virtual destructor [-Werror,-Wnon-virtual-dtor]
+  823 | struct IRWTexture : ITexture
+      |        ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:1077:8: error: 'IFeedbackTexture' has virtual functions but non-virtual destructor [-Werror,-Wnon-virtual-dtor]
+ 1077 | struct IFeedbackTexture
+      |        ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp:24:
+In file included from /Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-prelude.h:322:
+In file included from /Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:13:
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:164:60: warning: cast from 'const Vector<unsigned int, 3> *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+  164 |     const T& operator[](size_t index) const { return *((T*)(this) + index); }
+      |                                                            ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:345:1: note: in instantiation of member function 'Vector<unsigned int, 3>::operator[]' requested here
+  345 | SLANG_INT_VECTOR_OPS(uint)
+      | ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:309:5: note: expanded from macro 'SLANG_INT_VECTOR_OPS'
+  309 |     SLANG_VECTOR_BINARY_OP(T, *)          \
+      |     ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:282:25: note: expanded from macro 'SLANG_VECTOR_BINARY_OP'
+  282 |             result[i] = thisVal[i] op other[i];  \
+      |                         ^
+slang/sdf_spline_hessian.slang:51:37: note: in instantiation of function template specialization 'operator*<3>' requested here
+   51 |     uint32_t lane_0 = (_S4->groupID * Vector<uint32_t, 3> (64U, 1U, 1U) + _S4->groupThreadID).x;
+      |                                     ^
+5 warnings and 4 errors generated.
+[271/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/FullNLProblem.cpp.o
+[272/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/GarmentALForm.cpp.o
+[273/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/utils/Logger.cpp.o
+[274/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:166:5: warning: anonymous structs are a GNU extension [-Wgnu-anonymous-struct]
+  166 |     struct
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:190:5: warning: anonymous structs are a GNU extension [-Wgnu-anonymous-struct]
+  190 |     struct
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:36: warning: cast from 'const igl::FastWindingNumber::UT_Array<T> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                                         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:34: warning: cast from 'const igl::FastWindingNumber::UT_Array<T> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3137:2: warning: 'offsetof' on non-standard-layout type 'ThisT' (aka 'UT_SmallArray<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, 64UL>') [-Winvalid-offsetof]
+ 3137 |         UT_SMALL_ARRAY_SIZE_IGL_ASSERT();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3124:16: note: expanded from macro 'UT_SMALL_ARRAY_SIZE_IGL_ASSERT'
+ 3124 |         static_assert(offsetof(ThisT, myBuffer) == sizeof(UT_Array<T>), \
+      |                       ^               ~~~~~~~~
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/lib/clang/23/include/__stddef_offsetof.h:16:24: note: expanded from macro 'offsetof'
+   16 | #define offsetof(t, d) __builtin_offsetof(t, d)
+      |                        ^                     ~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6566:33: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::UT_SmallArray' requested here
+ 6566 |     UT_SmallArray<UT::Box<S,3>> triangle_boxes;
+      |                                 ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:34: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2510:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::isHeapBuffer' requested here
+ 2510 |     if (!isHeapBuffer(data))
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:1720:29: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::allocateCapacity' requested here
+ 1720 |         myData = capacity ? allocateCapacity(capacity) : NULL;
+      |                             ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3134:4: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::UT_Array' requested here
+ 3134 |         : UT_Array<T>(/*capacity*/0)
+      |           ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6566:33: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::UT_SmallArray' requested here
+ 6566 |     UT_SmallArray<UT::Box<S,3>> triangle_boxes;
+      |                                 ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:20: warning: cast from 'char *' to 'igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3> *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:36: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                                         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2897:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::isHeapBuffer' requested here
+ 2897 |     if (!isHeapBuffer())
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2501:5: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::setCapacity' requested here
+ 2501 |     setCapacity(0);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3111:7: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::~UT_Array' requested here
+ 3111 | class UT_SmallArray : public UT_Array<T>
+      |       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:22: warning: cast from 'char *' to 'igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3> *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:34: warning: cast from 'const igl::FastWindingNumber::UT_Array<unsigned int> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2510:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::isHeapBuffer' requested here
+ 2510 |     if (!isHeapBuffer(data))
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:1720:29: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::allocateCapacity' requested here
+ 1720 |         myData = capacity ? allocateCapacity(capacity) : NULL;
+      |                             ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4599:24: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::UT_Array' requested here
+ 4599 |     UT_Array<INT_TYPE> local_indices;
+      |                        ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:20: warning: cast from 'char *' to 'unsigned int *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:36: warning: cast from 'const igl::FastWindingNumber::UT_Array<unsigned int> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                                         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2897:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::isHeapBuffer' requested here
+ 2897 |     if (!isHeapBuffer())
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2501:5: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::setCapacity' requested here
+ 2501 |     setCapacity(0);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4599:24: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::~UT_Array' requested here
+ 4599 |     UT_Array<INT_TYPE> local_indices;
+      |                        ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:22: warning: cast from 'char *' to 'unsigned int *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:34: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2510:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::isHeapBuffer' requested here
+ 2510 |     if (!isHeapBuffer(data))
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:1720:29: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::allocateCapacity' requested here
+ 1720 |         myData = capacity ? allocateCapacity(capacity) : NULL;
+      |                             ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4617:20: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::UT_Array' requested here
+ 4617 |     UT_Array<Node> nodes;
+      |                    ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:20: warning: cast from 'char *' to 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:36: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                                         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2897:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::isHeapBuffer' requested here
+ 2897 |     if (!isHeapBuffer())
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4619:11: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::setCapacity' requested here
+ 4619 |     nodes.setCapacity(nodeEstimate(nboxes));
+      |           ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:22: warning: cast from 'char *' to 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3137:2: warning: 'offsetof' on non-standard-layout type 'ThisT' (aka 'UT_SmallArray<unsigned int, 64UL>') [-Winvalid-offsetof]
+ 3137 |         UT_SMALL_ARRAY_SIZE_IGL_ASSERT();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3124:16: note: expanded from macro 'UT_SMALL_ARRAY_SIZE_IGL_ASSERT'
+ 3124 |         static_assert(offsetof(ThisT, myBuffer) == sizeof(UT_Array<T>), \
+      |                       ^               ~~~~~~~~
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/lib/clang/23/include/__stddef_offsetof.h:16:24: note: expanded from macro 'offsetof'
+   16 | #define offsetof(t, d) __builtin_offsetof(t, d)
+      |                        ^                     ~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:5078:33: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<unsigned int>::UT_SmallArray' requested here
+ 5078 |     UT_SmallArray<SRC_INT_TYPE> leaf_indices;
+      |                                 ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4622:9: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::initNodeReorder<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4622 |         initNodeReorder<H>(nodes, nodes[0], axes_minmax, boxes, indices, nboxes, 0, max_items_per_leaf);
+      |         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3137:2: warning: 'offsetof' on non-standard-layout type 'ThisT' (aka 'UT_SmallArray<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>, 64UL>') [-Winvalid-offsetof]
+ 3137 |         UT_SMALL_ARRAY_SIZE_IGL_ASSERT();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3124:16: note: expanded from macro 'UT_SMALL_ARRAY_SIZE_IGL_ASSERT'
+ 3124 |         static_assert(offsetof(ThisT, myBuffer) == sizeof(UT_Array<T>), \
+      |                       ^               ~~~~~~~~
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/lib/clang/23/include/__stddef_offsetof.h:16:24: note: expanded from macro 'offsetof'
+   16 | #define offsetof(t, d) __builtin_offsetof(t, d)
+      |                        ^                     ~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4962:39: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::UT_SmallArray' requested here
+ 4962 |         UT_SmallArray<UT_Array<Node>> parallel_nodes;
+      |                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4624:9: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::initNode<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4624 |         initNode<H>(nodes, nodes[0], axes_minmax, boxes, indices, nboxes);
+      |         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:34: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2510:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::isHeapBuffer' requested here
+ 2510 |     if (!isHeapBuffer(data))
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:1720:29: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::allocateCapacity' requested here
+ 1720 |         myData = capacity ? allocateCapacity(capacity) : NULL;
+      |                             ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3134:4: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::UT_Array' requested here
+ 3134 |         : UT_Array<T>(/*capacity*/0)
+      |           ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4962:39: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::UT_SmallArray' requested here
+ 4962 |         UT_SmallArray<UT_Array<Node>> parallel_nodes;
+      |                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4624:9: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::initNode<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4624 |         initNode<H>(nodes, nodes[0], axes_minmax, boxes, indices, nboxes);
+      |         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:20: warning: cast from 'char *' to 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node> *' increases required alignment from 1 to 8 [-Wcast-align]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:36: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                                         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2897:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::isHeapBuffer' requested here
+ 2897 |     if (!isHeapBuffer())
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2501:5: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::setCapacity' requested here
+ 2501 |     setCapacity(0);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3111:7: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::~UT_Array' requested here
+ 3111 | class UT_SmallArray : public UT_Array<T>
+      |       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4624:9: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::initNode<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4624 |         initNode<H>(nodes, nodes[0], axes_minmax, boxes, indices, nboxes);
+      |         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:22: warning: cast from 'char *' to 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node> *' increases required alignment from 1 to 8 [-Wcast-align]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3137:2: warning: 'offsetof' on non-standard-layout type 'ThisT' (aka 'UT_SmallArray<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node, 64UL>') [-Winvalid-offsetof]
+ 3137 |         UT_SMALL_ARRAY_SIZE_IGL_ASSERT();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3124:16: note: expanded from macro 'UT_SMALL_ARRAY_SIZE_IGL_ASSERT'
+ 3124 |         static_assert(offsetof(ThisT, myBuffer) == sizeof(UT_Array<T>), \
+      |                       ^               ~~~~~~~~
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/lib/clang/23/include/__stddef_offsetof.h:16:24: note: expanded from macro 'offsetof'
+   16 | #define offsetof(t, d) __builtin_offsetof(t, d)
+      |                        ^                     ~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4963:29: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::UT_SmallArray' requested here
+ 4963 |         UT_SmallArray<Node> parallel_parent_nodes;
+      |                             ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4624:9: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::initNode<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4624 |         initNode<H>(nodes, nodes[0], axes_minmax, boxes, indices, nboxes);
+      |         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+24 warnings generated.
+[275/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/ContactForm.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/ContactForm.cpp:16:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/writePLY.h:204:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/writePLY.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+5 warnings generated.
+[276/300] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/Solver.cpp.o
+[277/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/FitForm.cpp.o
+[278/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/utils/MatrixCache.cpp.o
+[279/300] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/potentials/friction_potential.cpp.o
+[280/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/utils/JSONUtils.cpp.o
+[281/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/CurveCenterTargetForm.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/CurveCenterTargetForm.cpp:10:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/write_triangle_mesh.h:38:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/write_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/writePLY.h:204:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/writePLY.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+5 warnings generated.
+[282/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/GarmentForm.cpp.o
+[283/300] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/CurveConstraintForm.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/CurveConstraintForm.cpp:8:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:151:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  151 |     switch(simplex_size)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:43:3: warning: 'switch' missing 'default' label [-Wswitch-default]
+   43 |   switch(simplex_size)
+      |   ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:115:10: note: in instantiation of function template specialization 'igl::boundary_facets<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, 1>, Eigen::Matrix<int, -1, 1>>' requested here
+  115 |   return boundary_facets(T,F,J,K);
+      |          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/CurveConstraintForm.cpp:77:8: note: in instantiation of function template specialization 'igl::boundary_facets<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   77 |                 igl::boundary_facets(F, edges);
+      |                      ^
+/Users/ernest.lee/.cache/CPM/eigen/2e68522bbe453e136c9b281a06f112155cbeafd8/Eigen/src/Core/DenseBase.h:93:5: note: unnamed type used in template argument was declared here
+   93 |     enum {
+      |     ^
+/Users/ernest.lee/.cache/CPM/eigen/2e68522bbe453e136c9b281a06f112155cbeafd8/Eigen/src/Core/DenseBase.h:93:5: note: unnamed type used in template argument was declared here
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/CurveConstraintForm.cpp:9:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/adjacency_matrix.h:64:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/adjacency_matrix.cpp:43:3: warning: 'switch' missing 'default' label [-Wswitch-default]
+   43 |   switch(F.cols())
+      |   ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/CurveConstraintForm.cpp:83:8: note: in instantiation of function template specialization 'igl::adjacency_matrix<Eigen::Matrix<int, -1, -1>, int>' requested here
+   83 |                 igl::adjacency_matrix(edges, A);
+      |                      ^
+3 warnings generated.
+ninja: build stopped: subcommand failed.

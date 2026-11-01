@@ -1,0 +1,17 @@
+[workspace]
+name = "cloth-fit-mac"
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[dependencies]
+cmake = ">=3.31,<4"
+ninja = ">=1.12"
+python = ">=3.11"
+libboost-devel = ">=1.84"
+blosc = ">=1.21"
+pkg-config = "*"
+zlib = ">=1.2.13"
+tbb-devel = ">=2021.9,<2022"
+clangxx = ">=20"
+patch = "*"
+git = "*"

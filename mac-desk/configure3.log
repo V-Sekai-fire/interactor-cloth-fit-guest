@@ -1,0 +1,1336 @@
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Adding global flags: $<$<COMPILE_LANGUAGE:CXX>:-fdiagnostics-color=always>;$<$<COMPILE_LANGUAGE:CXX>:-fcolor-diagnostics>
+-- Third-party: creating target 'polysolve'
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Adding global flags: $<$<COMPILE_LANGUAGE:CXX>:-fdiagnostics-color=always>;$<$<COMPILE_LANGUAGE:CXX>:-fcolor-diagnostics>
+-- CPM: polysolve: Adding package eigen@0 (969c31eefcdfaab11da763bea3f7502086673ab0 at /Users/ernest.lee/.cache/CPM/eigen/2e68522bbe453e136c9b281a06f112155cbeafd8)
+-- Third-party: creating target 'Eigen3::Eigen'
+CMake Warning at /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:317 (message):
+  CPM: polysolve: Requires a newer version of eigen (3.4.0) than currently
+  included (0).
+Call Stack (most recent call first):
+  /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:616 (cpm_check_if_package_already_added)
+  cmake/recipes/eigen.cmake:27 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/CMakeLists.txt:204 (include)
+
+
+-- Third-party: creating target 'spdlog::spdlog'
+CMake Warning at /Users/ernest.lee/.cache/CPM/cpm/CPM_0.39.0.cmake:742 (message):
+  CPM: polysolve: Cache for spdlog
+  (/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042)
+  is dirty
+Call Stack (most recent call first):
+  cmake/recipes/spdlog.cmake:26 (CPMAddPackage)
+  /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/CMakeLists.txt:208 (include)
+
+
+-- Build spdlog: 1.12.0
+-- Build type: Release
+-- Generating install
+-- CPM: polysolve: Adding package spdlog@1.12.0 (v1.12.0 at /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042)
+-- Third-party: creating target 'nlohmann_json::nlohmann_json'
+-- CPM: polysolve: Adding package nlohmann_json@ ( at /Users/ernest.lee/.cache/CPM/nlohmann_json/3cc46c5b3b30780707857320f5d2655b293c4330)
+-- Third-party: creating target 'jse::jse'
+-- CPM: polysolve: Adding package json-spec-engine@0 (49f1a30f8c2912814916ec3d6108a649b23cb243 at /Users/ernest.lee/.cache/CPM/json-spec-engine/12d58b2ee49b30ef626202c753c7822cc3200a97)
+-- Third-party: creating target 'LBGFSpp::LBGFSpp'
+-- CPM: polysolve: Adding package lbfgspp@0.2.0 (v0.2.0 at /Users/ernest.lee/.cache/CPM/lbfgspp/4070b1abd12b2b0dc71ba965796709fd61addc96)
+-- Third-party: creating target 'finitediff::finitediff'
+-- CPM: polysolve: Adding package finite-diff@1.0.2 (v1.0.2 at /Users/ernest.lee/.cache/CPM/finite-diff/1d94bd80238c9925fb3a3e08f890692c283943ce)
+-- CPM: Adding package polysolve@0 (ee553dc6a330ef70bcc6ba2f05653fecd201c05f at /Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08)
+-- PolyFEM: staged 14 JSON spec(s) into /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/json-specs
+-- Third-party: creating target 'igl::core'
+-- Creating target: igl::core (igl_core)
+-- Creating target: igl::predicates (igl_predicates)
+-- Third-party: creating target 'predicates::predicates'
+CMake Deprecation Warning at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/predicates-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Creating target: igl_restricted::triangle (igl_restricted_triangle)
+-- Third-party: creating target 'triangle::triangle'
+CMake Deprecation Warning at /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build/_deps/triangle-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- CPM: Adding package libigl@2.5.0 (v2.5.0 at /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c)
+-- Third-party: creating target 'ipc::toolkit'
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Adding global flags: $<$<COMPILE_LANGUAGE:CXX>:-fdiagnostics-color=always>;$<$<COMPILE_LANGUAGE:CXX>:-fcolor-diagnostics>
+-- Third-party: creating target 'TBB::tbb' (OneTBB)
+CMake Deprecation Warning at /Users/ernest.lee/.cache/CPM/onetbb/820136c269eb2082624286116181ed3abf743ac8/CMakeLists.txt:15 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Warning at /Users/ernest.lee/.cache/CPM/onetbb/820136c269eb2082624286116181ed3abf743ac8/CMakeLists.txt:116 (message):
+  You are building oneTBB as a static library.  This is highly discouraged
+  and such configuration is not supported.  Consider building a dynamic
+  library to avoid unforeseen issues.
+
+
+-- Checking for one of the modules 'hwloc'
+-- TBBBind build targets are disabled due to unsupported environment
+-- CPM: ipc-toolkit: Adding package oneTBB@2021.9.0 (v2021.9.0 at /Users/ernest.lee/.cache/CPM/onetbb/820136c269eb2082624286116181ed3abf743ac8)
+-- Third-party: creating target 'tight_inclusion::tight_inclusion'
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Adding global flags: $<$<COMPILE_LANGUAGE:CXX>:-fdiagnostics-color=always>;$<$<COMPILE_LANGUAGE:CXX>:-fcolor-diagnostics>
+-- Searching for AVX...
+-- CPM: ipc-toolkit: Adding package Tight-Inclusion@1.0.5 (v1.0.5 at /Users/ernest.lee/.cache/CPM/tight-inclusion/d3e64701b8a639fe4618c844bee41bda79e79fb1)
+-- Third-party: creating target 'scalable_ccd::scalable_ccd'
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- Adding global flags: $<$<COMPILE_LANGUAGE:CXX>:-fdiagnostics-color=always>;$<$<COMPILE_LANGUAGE:CXX>:-fcolor-diagnostics>
+-- CPM: ipc-toolkit: Adding package scalable-ccd@0 (60692d7cbc03390a3a198792a3ff2b869c5da05b at /Users/ernest.lee/.cache/CPM/scalable-ccd/02e87ed5e48112899cf6e1459701716be5862680)
+-- Third-party: creating target 'simple_bvh::simple_bvh'
+-- Using CPM cache folder: /Users/ernest.lee/.cache/CPM
+-- CPM: ipc-toolkit: Adding package SimpleBVH@0 (e1a931337a9e07e8bd2d2e8bbdfd7e54bc850df5 at /Users/ernest.lee/.cache/CPM/simplebvh/72440d07837bfd3a5f6f0bf926a395a2c250630e)
+-- Third-party: creating target 'tsl::robin_map'
+CMake Deprecation Warning at /Users/ernest.lee/.cache/CPM/robin-map/b78c0b87c4df5b0c7c10be5a60353902f4258936/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- CPM: ipc-toolkit: Adding package robin-map@1.2.1 (v1.2.1 at /Users/ernest.lee/.cache/CPM/robin-map/b78c0b87c4df5b0c7c10be5a60353902f4258936)
+-- Third-party: creating target 'absl::flat_hash_map'
+-- CPM: ipc-toolkit: Adding package abseil-cpp@20230125.3 (20230125.3 at /Users/ernest.lee/.cache/CPM/abseil-cpp/2067ccce999f831c913871bc83499c79f0dff4a5)
+-- Third-party: creating target 'filib::filib'
+-- CPM: ipc-toolkit: Adding package filib@0 (1cd377a7c833a68dc47217829e333f4886c5c46d at /Users/ernest.lee/.cache/CPM/filib/d7c57a3182f00d31e32fe16572e316159b40246d)
+-- SIMD support disabled
+-- CPM: Adding package ipc-toolkit@0 (993e7e0fadb7073e1331ffa88ae288758d704d2e at /Users/ernest.lee/.cache/CPM/ipc-toolkit/4285d630095263eeda3720dfee60dd79530fd34c)
+-- PolyFEM: weftfit_retarget solve bridge
+-- Third-party: creating target 'CLI11::CLI11'
+CMake Deprecation Warning at /Users/ernest.lee/.cache/CPM/cli11/9e6fd3fcb946a91f4a10e874dc9d09753d96ed7f/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- CPM: Adding package CLI11@2.3.2 (v2.3.2 at /Users/ernest.lee/.cache/CPM/cli11/9e6fd3fcb946a91f4a10e874dc9d09753d96ed7f)
+-- Third-party: creating target 'Catch2::Catch2'
+-- CPM: Adding package Catch2@3.4.0 (v3.4.0 at /Users/ernest.lee/.cache/CPM/catch2/fc2d6e70e6b1b691860849b5eeca5a7b84d30f6f)
+-- Configuring done (1.6s)
+-- Generating done (0.2s)
+-- Build files have been written to: /Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/build
+[0/2] Re-checking globbed directories...
+[1/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/utf8.cc.o
+[2/227] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_base.dir/internal/unscaledcycleclock.cc.o
+[3/227] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_spinlock_wait.dir/internal/spinlock_wait.cc.o
+[4/227] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_base.dir/internal/cycleclock.cc.o
+[5/227] Linking CXX static library _deps/abseil-cpp-build/absl/base/libabsl_spinlock_wait.a
+[6/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/ostringstream.cc.o
+[7/227] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_log_severity.dir/log_severity.cc.o
+[8/227] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_raw_logging_internal.dir/internal/raw_logging.cc.o
+[9/227] Linking CXX static library _deps/abseil-cpp-build/absl/base/libabsl_log_severity.a
+[10/227] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_throw_delegate.dir/internal/throw_delegate.cc.o
+[11/227] Building CXX object _deps/abseil-cpp-build/absl/numeric/CMakeFiles/absl_int128.dir/int128.cc.o
+[12/227] Linking CXX static library _deps/abseil-cpp-build/absl/base/libabsl_raw_logging_internal.a
+[13/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/escaping.cc.o
+[14/227] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_base.dir/internal/thread_identity.cc.o
+[15/227] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_base.dir/internal/spinlock.cc.o
+[16/227] Building CXX object _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_base.dir/internal/sysinfo.cc.o
+[17/227] Linking CXX static library _deps/abseil-cpp-build/absl/base/libabsl_base.a
+[18/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/allocator.cpp.o
+[19/227] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/file_sinks.cpp:9:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/details/file_helper-inl.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/details/file_helper.h:6:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[20/227] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/stdout_sinks.cpp:11:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async_logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[21/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/dynamic_link.cpp.o
+[22/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/itt_notify.cpp.o
+[23/227] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/color_sinks.cpp:11:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async_logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[24/227] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/async.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/async.cpp:8:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/async_logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/logger.h:17:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[25/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/concurrent_bounded_queue.cpp.o
+[26/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/arena_slot.cpp.o
+[27/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/address_waiter.cpp.o
+[28/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/exception.cpp.o
+[29/227] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/cfg.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/cfg.cpp:8:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/cfg/helpers-inl.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/cfg/helpers.h:6:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[30/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/misc_ex.cpp.o
+[31/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/misc.cpp.o
+[32/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/main.cpp.o
+[33/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/arena.cpp.o
+[34/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/global_control.cpp.o
+[35/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/parallel_pipeline.cpp.o
+[36/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/rml_tbb.cpp.o
+[37/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/governor.cpp.o
+[38/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/private_server.cpp.o
+[39/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/profiling.cpp.o
+[40/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/market.cpp.o
+[41/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/observer_proxy.cpp.o
+[42/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/version.cpp.o
+[43/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/semaphore.cpp.o
+[44/227] Linking CXX static library _deps/abseil-cpp-build/absl/base/libabsl_throw_delegate.a
+[45/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/rtm_mutex.cpp.o
+[46/227] Linking CXX static library _deps/abseil-cpp-build/absl/numeric/libabsl_int128.a
+[47/227] Building CXX object _deps/abseil-cpp-build/absl/hash/CMakeFiles/absl_low_level_hash.dir/internal/low_level_hash.cc.o
+[48/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/rtm_rw_mutex.cpp.o
+[49/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/queuing_rw_mutex.cpp.o
+[50/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/ascii.cc.o
+[51/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/small_object_pool.cpp.o
+[52/227] Building CXX object _deps/abseil-cpp-build/absl/hash/CMakeFiles/absl_city.dir/internal/city.cc.o
+[53/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/task_group_context.cpp.o
+[54/227] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/bundled_fmtlib_format.cpp:11:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format-inl.h:29:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[55/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/internal/charconv_parse.cc.o
+[56/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/task.cpp.o
+[57/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/internal/stringify_sink.cc.o
+[58/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/internal/memutil.cc.o
+[59/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/internal/damerau_levenshtein_distance.cc.o
+[60/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/match.cc.o
+[61/227] Building CXX object _deps/onetbb-build/src/tbb/CMakeFiles/tbb.dir/task_dispatcher.cpp.o
+[62/227] Linking CXX static library _deps/abseil-cpp-build/absl/strings/libabsl_strings_internal.a
+[63/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/internal/charconv_bigint.cc.o
+[64/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/charconv.cc.o
+[65/227] Building CXX object _deps/abseil-cpp-build/absl/types/CMakeFiles/absl_bad_optional_access.dir/bad_optional_access.cc.o
+[66/227] Building CXX object _deps/abseil-cpp-build/absl/types/CMakeFiles/absl_bad_variant_access.dir/bad_variant_access.cc.o
+[67/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/AMGCL.cpp.o
+[68/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/escaping.cc.o
+[69/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/HypreSolver.cpp.o
+[70/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/Pardiso.cpp.o
+[71/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/string_view.cc.o
+[72/227] Linking CXX static library clang_23.1_cxx17_64_release/libtbb.a
+[73/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/str_replace.cc.o
+[74/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/str_cat.cc.o
+[75/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/str_split.cc.o
+[76/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/numbers.cc.o
+[77/227] Building CXX object _deps/abseil-cpp-build/absl/strings/CMakeFiles/absl_strings.dir/substitute.cc.o
+[78/227] Building CXX object _deps/json-spec-engine-build/CMakeFiles/jse.dir/src/jse/jse.cpp.o
+[79/227] Linking CXX static library _deps/json-spec-engine-build/libjse.a
+[80/227] Building CXX object _deps/tight-inclusion-build/CMakeFiles/tight_inclusion.dir/src/tight_inclusion/avx.cpp.o
+[81/227] Building CXX object _deps/tight-inclusion-build/CMakeFiles/tight_inclusion.dir/src/tight_inclusion/logger.cpp.o
+[82/227] Building CXX object _deps/tight-inclusion-build/CMakeFiles/tight_inclusion.dir/src/tight_inclusion/interval.cpp.o
+[83/227] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/src/spdlog.cpp:8:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/spdlog-inl.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/spdlog.h:12:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/common.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/fmt.h:28:
+/Users/ernest.lee/.cache/CPM/spdlog/55fe777fa2701b358f2ec2c056af9306bbc72042/include/spdlog/fmt/bundled/format.h:4168:27: warning: identifier '_a' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 4168 | constexpr auto operator"" _a(const char* s, size_t) -> detail::udl_arg<char> {
+      |                ~~~~~~~~~~~^~
+      |                operator""_a
+1 warning generated.
+[84/227] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/utils/profiler.cpp.o
+[85/227] Linking CXX static library _deps/spdlog-build/libspdlog.a
+[86/227] Building CXX object _deps/tight-inclusion-build/CMakeFiles/tight_inclusion.dir/src/tight_inclusion/ccd.cpp.o
+[87/227] Building CXX object _deps/simplebvh-build/CMakeFiles/simple_bvh.dir/src/SimpleBVH/Morton.cpp.o
+[88/227] Linking CXX static library _deps/abseil-cpp-build/absl/hash/libabsl_city.a
+[89/227] Linking CXX static library _deps/abseil-cpp-build/absl/hash/libabsl_low_level_hash.a
+[90/227] Linking CXX static library _deps/abseil-cpp-build/absl/strings/libabsl_strings.a
+[91/227] Linking CXX static library _deps/abseil-cpp-build/absl/types/libabsl_bad_optional_access.a
+[92/227] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/utils/merge_local_overlaps.cpp.o
+[93/227] Linking CXX static library _deps/abseil-cpp-build/absl/types/libabsl_bad_variant_access.a
+[94/227] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/utils/logger.cpp.o
+[95/227] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/broad_phase/aabb.cpp.o
+[96/227] Building CXX object _deps/abseil-cpp-build/absl/hash/CMakeFiles/absl_hash.dir/internal/hash.cc.o
+[97/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/FEMSolver.cpp.o
+[98/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/Criteria.cpp.o
+[99/227] Building CXX object _deps/finite-diff-build/CMakeFiles/finitediff_finitediff.dir/src/finitediff.cpp.o
+[100/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/Utils.cpp.o
+[101/227] Building CXX object _deps/tight-inclusion-build/CMakeFiles/tight_inclusion.dir/src/tight_inclusion/interval_root_finder.cpp.o
+[102/227] Building CXX object _deps/simplebvh-build/CMakeFiles/simple_bvh.dir/src/SimpleBVH/BVH.cpp.o
+[103/227] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/broad_phase/sort_and_sweep.cpp.o
+[104/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/PostStepData.cpp.o
+[105/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/Problem.cpp.o
+[106/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/SaddlePointSolver.cpp.o
+[107/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/GradientDescent.cpp.o
+[108/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/box_constraints/MMAAux.cpp.o
+[109/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/LBFGS.cpp.o
+[110/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/BoxConstraintSolver.cpp.o
+[111/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/ADAM.cpp.o
+[112/227] Linking CXX static library _deps/finite-diff-build/libfinitediff_finitediff.a
+[113/227] Building CXX object _deps/scalable-ccd-build/CMakeFiles/scalable_ccd.dir/src/scalable_ccd/utils/pca.cpp.o
+[114/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/BFGS.cpp.o
+[115/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/barrier/barrier.cpp.o
+[116/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/line_search/Armijo.cpp.o
+[117/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/line_search/NoLineSearch.cpp.o
+[118/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/Solver.cpp.o
+/Users/ernest.lee/.cache/CPM/polysolve/2ae6231927e5e71d16e0c4eeba6bb9f2dd363d08/src/polysolve/nonlinear/Solver.cpp:586:9: warning: 'switch' missing 'default' label [-Wswitch-default]
+  586 |         switch (gradient_fd_strategy)
+      |         ^
+1 warning generated.
+[119/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/barrier/adaptive_stiffness.cpp.o
+[120/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/box_constraints/MMA.cpp.o
+[121/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/Newton.cpp.o
+[122/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/line_search/RobustArmijo.cpp.o
+[123/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/sweep_and_tiniest_queue.cpp.o
+[124/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ipc.cpp.o
+[125/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/line_search/LineSearch.cpp.o
+[126/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/line_search/Backtracking.cpp.o
+[127/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/aabb.cpp.o
+[128/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/broad_phase.cpp.o
+[129/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collision_mesh.cpp.o
+[130/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve.dir/src/polysolve/nonlinear/descent_strategies/box_constraints/LBFGSB.cpp.o
+[131/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/sweep_and_prune.cpp.o
+[132/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/aabb.cpp.o
+[133/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/brute_force.cpp.o
+[134/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/bvh.cpp.o
+[135/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/inexact_point_edge.cpp.o
+[136/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/voxel_size_heuristic.cpp.o
+[137/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/ccd.cpp.o
+[138/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/additive_ccd.cpp.o
+[139/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/edge_face.cpp.o
+[140/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/candidates.cpp.o
+[141/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/point_static_plane.cpp.o
+[142/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/continuous_collision_candidate.cpp.o
+[143/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/face_face.cpp.o
+[144/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/ccd/nonlinear_ccd.cpp.o
+[145/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/edge_edge.cpp.o
+[146/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/spatial_hash.cpp.o
+[147/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/edge_vertex.cpp.o
+[148/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/face_vertex.cpp.o
+[149/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/candidates/vertex_vertex.cpp.o
+[150/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collisions/collision.cpp.o
+[151/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/broad_phase/hash_grid.cpp.o
+[152/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collisions/edge_edge.cpp.o
+[153/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collisions/plane_vertex.cpp.o
+[154/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/edge_edge_mollifier.cpp.o
+[155/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/line_line.cpp.o
+[156/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/edge_edge.cpp.o
+[157/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/smooth_friction_mollifier.cpp.o
+[158/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/point_edge.cpp.o
+[159/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/point_line.cpp.o
+[160/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/distance_type.cpp.o
+[161/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collisions/collisions_builder.cpp.o
+[162/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/point_point.cpp.o
+[163/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/point_plane.cpp.o
+[164/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/collisions/collisions.cpp.o
+[165/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/distance/point_triangle.cpp.o
+[166/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/normal_force_magnitude.cpp.o
+[167/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/friction_collisions.cpp.o
+[168/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/tangent_basis.cpp.o
+[169/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/relative_velocity.cpp.o
+[170/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/closest_point.cpp.o
+[171/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/collisions/edge_vertex.cpp.o
+[172/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/collisions/friction_collision.cpp.o
+[173/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/collisions/edge_edge.cpp.o
+[174/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/collisions/face_vertex.cpp.o
+[175/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/implicits/plane.cpp.o
+[176/227] Linking CXX static library _deps/tight-inclusion-build/libtight_inclusion.a
+[177/227] Linking CXX static library _deps/scalable-ccd-build/libscalable_ccd.a
+[178/227] Linking CXX static library _deps/simplebvh-build/libsimple_bvh.a
+[179/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/friction/collisions/vertex_vertex.cpp.o
+[180/227] Linking CXX static library _deps/abseil-cpp-build/absl/hash/libabsl_hash.a
+[181/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/logger.cpp.o
+[182/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/potentials/barrier_potential.cpp.o
+[183/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/unordered_map_and_set.cpp.o
+[184/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/autogen/auto_derivatives3.cpp.o
+[185/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/vertex_to_min_edge.cpp.o
+[186/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/interval.cpp.o
+[187/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/autogen/auto_derivatives2.cpp.o
+[188/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/area_gradient.cpp.o
+[189/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/save_obj.cpp.o
+[190/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/utils/intersection.cpp.o
+[191/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/autogen/auto_derivatives1.cpp.o
+[192/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/io/OBJWriter.cpp.o
+[193/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/io/OBJReader.cpp.o
+[194/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/mesh/MeshUtils.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/mesh/MeshUtils.cpp:10:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:319:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  319 |     printf(format,"V",igl::min_size(vV),igl::max_size(vV));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:325:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  325 |     printf(format,"F",igl::min_size(vF),igl::max_size(vF));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:333:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  333 |       printf(format,"CN",igl::min_size(vN),igl::max_size(vN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:343:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  343 |       printf(format,"FN",igl::min_size(vFN),igl::max_size(vFN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:354:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  354 |       printf(format,"TC",igl::min_size(vTC),igl::max_size(vTC));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:364:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  364 |       printf(format,"FTC",igl::min_size(vFTC),igl::max_size(vFTC));
+      |              ^~~~~~
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/mesh/MeshUtils.cpp:10:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:16:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readPLY.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/mesh/MeshUtils.cpp:10:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:19:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:151:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  151 |     switch(simplex_size)
+      |     ^
+12 warnings generated.
+[195/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/io/MatrixIO.cpp.o
+[196/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/FullNLProblem.cpp.o
+[197/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp:24:
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-prelude.h:302:8: warning: 'ISlangUnknown' has virtual functions but non-virtual destructor [-Wnon-virtual-dtor]
+  302 | struct ISlangUnknown
+      |        ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp:24:
+In file included from /Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-prelude.h:322:
+In file included from /Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:13:
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:164:60: warning: cast from 'const Vector<T, 3> *' to 'type-parameter-0-0 *' drops const qualifier [-Wcast-qual]
+  164 |     const T& operator[](size_t index) const { return *((T*)(this) + index); }
+      |                                                            ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:198:60: warning: cast from 'const Vector<T, 4> *' to 'type-parameter-0-0 *' drops const qualifier [-Wcast-qual]
+  198 |     const T& operator[](size_t index) const { return *((T*)(this) + index); }
+      |                                                            ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp:24:
+In file included from /Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-prelude.h:322:
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:301:9: warning: 'switch' missing 'default' label [-Wswitch-default]
+  301 |         switch (baseShape)
+      |         ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:340:9: warning: 'switch' missing 'default' label [-Wswitch-default]
+  340 |         switch (baseShape)
+      |         ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:395:8: warning: 'ITexture' has virtual functions but non-virtual destructor [-Wnon-virtual-dtor]
+  395 | struct ITexture
+      |        ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:823:8: warning: 'IRWTexture' has virtual functions but non-virtual destructor [-Wnon-virtual-dtor]
+  823 | struct IRWTexture : ITexture
+      |        ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:1077:8: warning: 'IFeedbackTexture' has virtual functions but non-virtual destructor [-Wnon-virtual-dtor]
+ 1077 | struct IFeedbackTexture
+      |        ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfSpline.cpp:24:
+In file included from /Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-prelude.h:322:
+In file included from /Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types.h:13:
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:164:60: warning: cast from 'const Vector<unsigned int, 3> *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+  164 |     const T& operator[](size_t index) const { return *((T*)(this) + index); }
+      |                                                            ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:345:1: note: in instantiation of member function 'Vector<unsigned int, 3>::operator[]' requested here
+  345 | SLANG_INT_VECTOR_OPS(uint)
+      | ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:309:5: note: expanded from macro 'SLANG_INT_VECTOR_OPS'
+  309 |     SLANG_VECTOR_BINARY_OP(T, *)          \
+      |     ^
+/Users/ernest.lee/Documents/meshing-pen/2-contract/guest-runtime/guest/avbd/slang-rt/slang-cpp-types-core.h:282:25: note: expanded from macro 'SLANG_VECTOR_BINARY_OP'
+  282 |             result[i] = thisVal[i] op other[i];  \
+      |                         ^
+slang/sdf_spline_hessian.slang:51:37: note: in instantiation of function template specialization 'operator*<3>' requested here
+   51 |     uint32_t lane_0 = (_S4->groupID * Vector<uint32_t, 3> (64U, 1U, 1U) + _S4->groupThreadID).x;
+      |                                     ^
+9 warnings generated.
+[198/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/GarmentALForm.cpp.o
+[199/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/potentials/distance_based_potential.cpp.o
+[200/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/utils/Logger.cpp.o
+[201/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/utils/SpecPaths.cpp.o
+[202/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/utils/StringUtils.cpp.o
+[203/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/utils/par_for.cpp.o
+[204/227] Building CXX object _deps/polysolve-build/CMakeFiles/polysolve_linear.dir/src/polysolve/linear/Solver.cpp.o
+[205/227] Linking CXX static library _deps/polysolve-build/libpolysolve_linear.a
+[206/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/ContactForm.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/ContactForm.cpp:16:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/writePLY.h:204:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/writePLY.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+5 warnings generated.
+[207/227] Linking CXX static library _deps/polysolve-build/libpolysolve.a
+[208/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:166:5: warning: anonymous structs are a GNU extension [-Wgnu-anonymous-struct]
+  166 |     struct
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:190:5: warning: anonymous structs are a GNU extension [-Wgnu-anonymous-struct]
+  190 |     struct
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:36: warning: cast from 'const igl::FastWindingNumber::UT_Array<T> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                                         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:34: warning: cast from 'const igl::FastWindingNumber::UT_Array<T> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3137:2: warning: 'offsetof' on non-standard-layout type 'ThisT' (aka 'UT_SmallArray<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, 64UL>') [-Winvalid-offsetof]
+ 3137 |         UT_SMALL_ARRAY_SIZE_IGL_ASSERT();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3124:16: note: expanded from macro 'UT_SMALL_ARRAY_SIZE_IGL_ASSERT'
+ 3124 |         static_assert(offsetof(ThisT, myBuffer) == sizeof(UT_Array<T>), \
+      |                       ^               ~~~~~~~~
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/lib/clang/23/include/__stddef_offsetof.h:16:24: note: expanded from macro 'offsetof'
+   16 | #define offsetof(t, d) __builtin_offsetof(t, d)
+      |                        ^                     ~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6566:33: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::UT_SmallArray' requested here
+ 6566 |     UT_SmallArray<UT::Box<S,3>> triangle_boxes;
+      |                                 ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:34: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2510:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::isHeapBuffer' requested here
+ 2510 |     if (!isHeapBuffer(data))
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:1720:29: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::allocateCapacity' requested here
+ 1720 |         myData = capacity ? allocateCapacity(capacity) : NULL;
+      |                             ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3134:4: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::UT_Array' requested here
+ 3134 |         : UT_Array<T>(/*capacity*/0)
+      |           ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6566:33: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::UT_SmallArray' requested here
+ 6566 |     UT_SmallArray<UT::Box<S,3>> triangle_boxes;
+      |                                 ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:20: warning: cast from 'char *' to 'igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3> *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:36: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                                         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2897:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::isHeapBuffer' requested here
+ 2897 |     if (!isHeapBuffer())
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2501:5: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::setCapacity' requested here
+ 2501 |     setCapacity(0);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3111:7: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>>::~UT_Array' requested here
+ 3111 | class UT_SmallArray : public UT_Array<T>
+      |       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:22: warning: cast from 'char *' to 'igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3> *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:34: warning: cast from 'const igl::FastWindingNumber::UT_Array<unsigned int> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2510:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::isHeapBuffer' requested here
+ 2510 |     if (!isHeapBuffer(data))
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:1720:29: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::allocateCapacity' requested here
+ 1720 |         myData = capacity ? allocateCapacity(capacity) : NULL;
+      |                             ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4599:24: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::UT_Array' requested here
+ 4599 |     UT_Array<INT_TYPE> local_indices;
+      |                        ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:20: warning: cast from 'char *' to 'unsigned int *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:36: warning: cast from 'const igl::FastWindingNumber::UT_Array<unsigned int> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                                         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2897:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::isHeapBuffer' requested here
+ 2897 |     if (!isHeapBuffer())
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2501:5: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::setCapacity' requested here
+ 2501 |     setCapacity(0);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4599:24: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<unsigned int>::~UT_Array' requested here
+ 4599 |     UT_Array<INT_TYPE> local_indices;
+      |                        ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:22: warning: cast from 'char *' to 'unsigned int *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:34: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2510:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::isHeapBuffer' requested here
+ 2510 |     if (!isHeapBuffer(data))
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:1720:29: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::allocateCapacity' requested here
+ 1720 |         myData = capacity ? allocateCapacity(capacity) : NULL;
+      |                             ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4617:20: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::UT_Array' requested here
+ 4617 |     UT_Array<Node> nodes;
+      |                    ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:20: warning: cast from 'char *' to 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:36: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                                         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2897:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::isHeapBuffer' requested here
+ 2897 |     if (!isHeapBuffer())
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4619:11: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::setCapacity' requested here
+ 4619 |     nodes.setCapacity(nodeEstimate(nboxes));
+      |           ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:22: warning: cast from 'char *' to 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node *' increases required alignment from 1 to 4 [-Wcast-align]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3137:2: warning: 'offsetof' on non-standard-layout type 'ThisT' (aka 'UT_SmallArray<unsigned int, 64UL>') [-Winvalid-offsetof]
+ 3137 |         UT_SMALL_ARRAY_SIZE_IGL_ASSERT();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3124:16: note: expanded from macro 'UT_SMALL_ARRAY_SIZE_IGL_ASSERT'
+ 3124 |         static_assert(offsetof(ThisT, myBuffer) == sizeof(UT_Array<T>), \
+      |                       ^               ~~~~~~~~
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/lib/clang/23/include/__stddef_offsetof.h:16:24: note: expanded from macro 'offsetof'
+   16 | #define offsetof(t, d) __builtin_offsetof(t, d)
+      |                        ^                     ~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:5078:33: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<unsigned int>::UT_SmallArray' requested here
+ 5078 |     UT_SmallArray<SRC_INT_TYPE> leaf_indices;
+      |                                 ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4622:9: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::initNodeReorder<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4622 |         initNodeReorder<H>(nodes, nodes[0], axes_minmax, boxes, indices, nboxes, 0, max_items_per_leaf);
+      |         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3137:2: warning: 'offsetof' on non-standard-layout type 'ThisT' (aka 'UT_SmallArray<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>, 64UL>') [-Winvalid-offsetof]
+ 3137 |         UT_SMALL_ARRAY_SIZE_IGL_ASSERT();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3124:16: note: expanded from macro 'UT_SMALL_ARRAY_SIZE_IGL_ASSERT'
+ 3124 |         static_assert(offsetof(ThisT, myBuffer) == sizeof(UT_Array<T>), \
+      |                       ^               ~~~~~~~~
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/lib/clang/23/include/__stddef_offsetof.h:16:24: note: expanded from macro 'offsetof'
+   16 | #define offsetof(t, d) __builtin_offsetof(t, d)
+      |                        ^                     ~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4962:39: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::UT_SmallArray' requested here
+ 4962 |         UT_SmallArray<UT_Array<Node>> parallel_nodes;
+      |                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4624:9: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::initNode<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4624 |         initNode<H>(nodes, nodes[0], axes_minmax, boxes, indices, nboxes);
+      |         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:34: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2510:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::isHeapBuffer' requested here
+ 2510 |     if (!isHeapBuffer(data))
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:1720:29: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::allocateCapacity' requested here
+ 1720 |         myData = capacity ? allocateCapacity(capacity) : NULL;
+      |                             ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3134:4: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::UT_Array' requested here
+ 3134 |         : UT_Array<T>(/*capacity*/0)
+      |           ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4962:39: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::UT_SmallArray' requested here
+ 4962 |         UT_SmallArray<UT_Array<Node>> parallel_nodes;
+      |                                       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4624:9: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::initNode<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4624 |         initNode<H>(nodes, nodes[0], axes_minmax, boxes, indices, nboxes);
+      |         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2279:20: warning: cast from 'char *' to 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node> *' increases required alignment from 1 to 8 [-Wcast-align]
+ 2279 |                         return (data != (T *)(((char*)this) + sizeof(*this)));
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:36: warning: cast from 'const igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>> *' to 'char *' drops const qualifier [-Wcast-qual]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                                         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2897:10: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::isHeapBuffer' requested here
+ 2897 |     if (!isHeapBuffer())
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2501:5: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::setCapacity' requested here
+ 2501 |     setCapacity(0);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3111:7: note: in instantiation of member function 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>>::~UT_Array' requested here
+ 3111 | class UT_SmallArray : public UT_Array<T>
+      |       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4624:9: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::initNode<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4624 |         initNode<H>(nodes, nodes[0], axes_minmax, boxes, indices, nboxes);
+      |         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.h:4:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:2275:22: warning: cast from 'char *' to 'igl::FastWindingNumber::UT_Array<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node> *' increases required alignment from 1 to 8 [-Wcast-align]
+ 2275 |                         return (myData != (T *)(((char*)this) + sizeof(*this)));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3137:2: warning: 'offsetof' on non-standard-layout type 'ThisT' (aka 'UT_SmallArray<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node, 64UL>') [-Winvalid-offsetof]
+ 3137 |         UT_SMALL_ARRAY_SIZE_IGL_ASSERT();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:3124:16: note: expanded from macro 'UT_SMALL_ARRAY_SIZE_IGL_ASSERT'
+ 3124 |         static_assert(offsetof(ThisT, myBuffer) == sizeof(UT_Array<T>), \
+      |                       ^               ~~~~~~~~
+/Users/ernest.lee/Desktop/stk-work/cloth-fit-mac/.pixi/envs/default/lib/clang/23/include/__stddef_offsetof.h:16:24: note: expanded from macro 'offsetof'
+   16 | #define offsetof(t, d) __builtin_offsetof(t, d)
+      |                        ^                     ~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4963:29: note: in instantiation of member function 'igl::FastWindingNumber::UT_SmallArray<igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::Node>::UT_SmallArray' requested here
+ 4963 |         UT_SmallArray<Node> parallel_parent_nodes;
+      |                             ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4624:9: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::initNode<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4624 |         initNode<H>(nodes, nodes[0], axes_minmax, boxes, indices, nboxes);
+      |         ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:4585:5: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 4585 |     init<H>(axes_minmax, boxes, nboxes, indices, reorder_indices, max_items_per_leaf);
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/FastWindingNumberForSoups.h:6596:21: note: in instantiation of function template specialization 'igl::FastWindingNumber::HDK_Sample::UT::BVH<4>::init<igl::FastWindingNumber::HDK_Sample::UT::BVH_Heuristic::BOX_AREA, float, 3U, igl::FastWindingNumber::HDK_Sample::UT::Box<float, 3>, unsigned int>' requested here
+ 6596 |     myTree.template init<UT::BVH_Heuristic::BOX_AREA,S,3>(triangle_boxes.array(), ntriangles);
+      |                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/fast_winding_number.cpp:410:26: note: in instantiation of member function 'igl::FastWindingNumber::HDK_Sample::UT_SolidAngle<float, float>::init' requested here
+  410 |   fwn_bvh.ut_solid_angle.init(
+      |                          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/SdfGrid.cpp:55:8: note: in instantiation of function template specialization 'igl::fast_winding_number<Eigen::Matrix<float, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   55 |                 igl::fast_winding_number(Vf_, F_, 2, *fwn_);
+      |                      ^
+24 warnings generated.
+[209/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/FitForm.cpp.o
+[210/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/utils/MatrixCache.cpp.o
+[211/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/utils/JSONUtils.cpp.o
+[212/227] Building CXX object _deps/ipc-toolkit-build/CMakeFiles/ipc_toolkit.dir/src/ipc/potentials/friction_potential.cpp.o
+[213/227] Linking CXX static library _deps/ipc-toolkit-build/libipc_toolkit.a
+[214/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/garment/GarmentNLProblem.cpp.o
+[215/227] Building CXX object CMakeFiles/PolyFEM_bin.dir/src/polyfem/garment/GarmentNLProblem.cpp.o
+[216/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/utils/MatrixUtils.cpp.o
+[217/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/CurveCenterTargetForm.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/CurveCenterTargetForm.cpp:10:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/write_triangle_mesh.h:38:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/write_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/writePLY.h:204:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/writePLY.cpp:4:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+5 warnings generated.
+[218/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/garment/run_retarget.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/run_retarget.cpp:27:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:319:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  319 |     printf(format,"V",igl::min_size(vV),igl::max_size(vV));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:325:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  325 |     printf(format,"F",igl::min_size(vF),igl::max_size(vF));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:333:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  333 |       printf(format,"CN",igl::min_size(vN),igl::max_size(vN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:343:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  343 |       printf(format,"FN",igl::min_size(vFN),igl::max_size(vFN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:354:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  354 |       printf(format,"TC",igl::min_size(vTC),igl::max_size(vTC));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:364:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  364 |       printf(format,"FTC",igl::min_size(vFTC),igl::max_size(vFTC));
+      |              ^~~~~~
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/run_retarget.cpp:27:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:16:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readPLY.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/run_retarget.cpp:27:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:19:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:151:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  151 |     switch(simplex_size)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/run_retarget.cpp:26:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/edges.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/edges.cpp:9:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/adjacency_matrix.h:64:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/adjacency_matrix.cpp:43:3: warning: 'switch' missing 'default' label [-Wswitch-default]
+   43 |   switch(F.cols())
+      |   ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/edges.cpp:20:8: note: in instantiation of function template specialization 'igl::adjacency_matrix<Eigen::Matrix<int, -1, -1>, int>' requested here
+   20 |   igl::adjacency_matrix(F,A);
+      |        ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/run_retarget.cpp:163:14: note: in instantiation of function template specialization 'igl::edges<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+  163 |         igl::edges(collision_triangles, collision_edges);
+      |              ^
+13 warnings generated.
+[219/227] Building CXX object CMakeFiles/PolyFEM_bin.dir/src/polyfem/garment/run_retarget.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/run_retarget.cpp:27:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:319:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  319 |     printf(format,"V",igl::min_size(vV),igl::max_size(vV));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:325:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  325 |     printf(format,"F",igl::min_size(vF),igl::max_size(vF));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:333:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  333 |       printf(format,"CN",igl::min_size(vN),igl::max_size(vN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:343:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  343 |       printf(format,"FN",igl::min_size(vFN),igl::max_size(vFN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:354:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  354 |       printf(format,"TC",igl::min_size(vTC),igl::max_size(vTC));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:364:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  364 |       printf(format,"FTC",igl::min_size(vFTC),igl::max_size(vFTC));
+      |              ^~~~~~
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/run_retarget.cpp:27:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:16:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readPLY.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/run_retarget.cpp:27:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:19:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:151:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  151 |     switch(simplex_size)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/run_retarget.cpp:26:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/edges.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/edges.cpp:9:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/adjacency_matrix.h:64:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/adjacency_matrix.cpp:43:3: warning: 'switch' missing 'default' label [-Wswitch-default]
+   43 |   switch(F.cols())
+      |   ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/edges.cpp:20:8: note: in instantiation of function template specialization 'igl::adjacency_matrix<Eigen::Matrix<int, -1, -1>, int>' requested here
+   20 |   igl::adjacency_matrix(F,A);
+      |        ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/run_retarget.cpp:163:14: note: in instantiation of function template specialization 'igl::edges<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+  163 |         igl::edges(collision_triangles, collision_edges);
+      |              ^
+13 warnings generated.
+[220/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/GarmentForm.cpp.o
+[221/227] Building CXX object CMakeFiles/PolyFEM_bin.dir/src/polyfem/main.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/main.cpp:5:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:319:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  319 |     printf(format,"V",igl::min_size(vV),igl::max_size(vV));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:325:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  325 |     printf(format,"F",igl::min_size(vF),igl::max_size(vF));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:333:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  333 |       printf(format,"CN",igl::min_size(vN),igl::max_size(vN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:343:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  343 |       printf(format,"FN",igl::min_size(vFN),igl::max_size(vFN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:354:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  354 |       printf(format,"TC",igl::min_size(vTC),igl::max_size(vTC));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:364:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  364 |       printf(format,"FTC",igl::min_size(vFTC),igl::max_size(vFTC));
+      |              ^~~~~~
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/main.cpp:5:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:16:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readPLY.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/main.cpp:5:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:19:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:151:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  151 |     switch(simplex_size)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/main.cpp:7:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/edges.h:50:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/edges.cpp:9:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/adjacency_matrix.h:64:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/adjacency_matrix.cpp:43:3: warning: 'switch' missing 'default' label [-Wswitch-default]
+   43 |   switch(F.cols())
+      |   ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/edges.cpp:20:8: note: in instantiation of function template specialization 'igl::adjacency_matrix<Eigen::Matrix<int, -1, -1>, int>' requested here
+   20 |   igl::adjacency_matrix(F,A);
+      |        ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/main.cpp:173:7: note: in instantiation of function template specialization 'igl::edges<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+  173 |         igl::edges(collision_triangles, collision_edges);
+      |              ^
+13 warnings generated.
+[222/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/solver/forms/garment_forms/CurveConstraintForm.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/CurveConstraintForm.cpp:8:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:151:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  151 |     switch(simplex_size)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:43:3: warning: 'switch' missing 'default' label [-Wswitch-default]
+   43 |   switch(simplex_size)
+      |   ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:115:10: note: in instantiation of function template specialization 'igl::boundary_facets<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, 1>, Eigen::Matrix<int, -1, 1>>' requested here
+  115 |   return boundary_facets(T,F,J,K);
+      |          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/CurveConstraintForm.cpp:77:8: note: in instantiation of function template specialization 'igl::boundary_facets<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   77 |                 igl::boundary_facets(F, edges);
+      |                      ^
+/Users/ernest.lee/.cache/CPM/eigen/2e68522bbe453e136c9b281a06f112155cbeafd8/Eigen/src/Core/DenseBase.h:93:5: note: unnamed type used in template argument was declared here
+   93 |     enum {
+      |     ^
+/Users/ernest.lee/.cache/CPM/eigen/2e68522bbe453e136c9b281a06f112155cbeafd8/Eigen/src/Core/DenseBase.h:93:5: note: unnamed type used in template argument was declared here
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/CurveConstraintForm.cpp:9:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/adjacency_matrix.h:64:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/adjacency_matrix.cpp:43:3: warning: 'switch' missing 'default' label [-Wswitch-default]
+   43 |   switch(F.cols())
+      |   ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/solver/forms/garment_forms/CurveConstraintForm.cpp:83:8: note: in instantiation of function template specialization 'igl::adjacency_matrix<Eigen::Matrix<int, -1, -1>, int>' requested here
+   83 |                 igl::adjacency_matrix(edges, A);
+      |                      ^
+3 warnings generated.
+[223/227] Building CXX object CMakeFiles/polyfem.dir/src/polyfem/garment/optimize.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:319:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  319 |     printf(format,"V",igl::min_size(vV),igl::max_size(vV));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:325:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  325 |     printf(format,"F",igl::min_size(vF),igl::max_size(vF));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:333:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  333 |       printf(format,"CN",igl::min_size(vN),igl::max_size(vN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:343:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  343 |       printf(format,"FN",igl::min_size(vFN),igl::max_size(vFN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:354:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  354 |       printf(format,"TC",igl::min_size(vTC),igl::max_size(vTC));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:364:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  364 |       printf(format,"FTC",igl::min_size(vFTC),igl::max_size(vFTC));
+      |              ^~~~~~
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:16:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readPLY.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:19:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:151:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  151 |     switch(simplex_size)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:319:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  319 |     printf(format,"V",igl::min_size(vV),igl::max_size(vV));
+      |            ^~~~~~
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:426:14: note: in instantiation of function template specialization 'igl::readOBJ<Eigen::Matrix<double, -1, -1>, Eigen::Matrix<double, -1, -1>, Eigen::Matrix<double, -1, -1>, Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+  426 |         igl::readOBJ(path, v, tc, cn, f, ftc, fn);
+      |              ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:325:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  325 |     printf(format,"F",igl::min_size(vF),igl::max_size(vF));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:333:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  333 |       printf(format,"CN",igl::min_size(vN),igl::max_size(vN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:343:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  343 |       printf(format,"FN",igl::min_size(vFN),igl::max_size(vFN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:354:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  354 |       printf(format,"TC",igl::min_size(vTC),igl::max_size(vTC));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:364:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  364 |       printf(format,"FTC",igl::min_size(vFTC),igl::max_size(vFTC));
+      |              ^~~~~~
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:19:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:43:3: warning: 'switch' missing 'default' label [-Wswitch-default]
+   43 |   switch(simplex_size)
+      |   ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:115:10: note: in instantiation of function template specialization 'igl::boundary_facets<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, 1>, Eigen::Matrix<int, -1, 1>>' requested here
+  115 |   return boundary_facets(T,F,J,K);
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:101:7: note: in instantiation of function template specialization 'igl::boundary_facets<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+  101 |       boundary_facets(T,F);
+      |       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:68:10: note: in instantiation of function template specialization 'igl::read_triangle_mesh<Eigen::Matrix<double, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   68 |   return read_triangle_mesh(str,V,F,_1,_2,_3,_4);
+      |          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:1169:18: note: in instantiation of function template specialization 'igl::read_triangle_mesh<Eigen::Matrix<double, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+ 1169 |             igl::read_triangle_mesh(avatar_mesh_path, avatar_v, avatar_f);
+      |                  ^
+19 warnings generated.
+[224/227] Linking CXX static library libpolyfem.a
+[225/227] Building CXX object CMakeFiles/PolyFEM_bin.dir/src/polyfem/garment/optimize.cpp.o
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:319:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  319 |     printf(format,"V",igl::min_size(vV),igl::max_size(vV));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:325:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  325 |     printf(format,"F",igl::min_size(vF),igl::max_size(vF));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:333:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  333 |       printf(format,"CN",igl::min_size(vN),igl::max_size(vN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:343:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  343 |       printf(format,"FN",igl::min_size(vFN),igl::max_size(vFN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:354:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  354 |       printf(format,"TC",igl::min_size(vTC),igl::max_size(vTC));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:364:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  364 |       printf(format,"FTC",igl::min_size(vFTC),igl::max_size(vFTC));
+      |              ^~~~~~
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:16:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readPLY.h:7:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.h:183:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:33:149: warning: cast from 'const short *' to 'unsigned short *' drops const qualifier [-Wcast-qual]
+   33 | template<>  int16_t IGL_INLINE endian_swap<int16_t, int16_t>(const int16_t & v) noexcept { uint16_t r = endian_swap<uint16_t, uint16_t>(*(uint16_t*)&v); return *(int16_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:34:149: warning: cast from 'const int *' to 'unsigned int *' drops const qualifier [-Wcast-qual]
+   34 | template<>  int32_t IGL_INLINE endian_swap<int32_t, int32_t>(const int32_t & v) noexcept { uint32_t r = endian_swap<uint32_t, uint32_t>(*(uint32_t*)&v); return *(int32_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:35:149: warning: cast from 'const long long *' to 'unsigned long long *' drops const qualifier [-Wcast-qual]
+   35 | template<>  int64_t IGL_INLINE endian_swap<int64_t, int64_t>(const int64_t & v) noexcept { uint64_t r = endian_swap<uint64_t, uint64_t>(*(uint64_t*)&v); return *(int64_t*)&r; }
+      |                                                                                                                                                     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:265:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  265 |     switch (t)
+      |     ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/tinyply.cpp:282:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  282 |     switch (t)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:19:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:151:5: warning: 'switch' missing 'default' label [-Wswitch-default]
+  151 |     switch(simplex_size)
+      |     ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:319:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  319 |     printf(format,"V",igl::min_size(vV),igl::max_size(vV));
+      |            ^~~~~~
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:426:14: note: in instantiation of function template specialization 'igl::readOBJ<Eigen::Matrix<double, -1, -1>, Eigen::Matrix<double, -1, -1>, Eigen::Matrix<double, -1, -1>, Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+  426 |         igl::readOBJ(path, v, tc, cn, f, ftc, fn);
+      |              ^
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:13:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.h:121:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:325:12: warning: format string is not a string literal [-Wformat-nonliteral]
+  325 |     printf(format,"F",igl::min_size(vF),igl::max_size(vF));
+      |            ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:333:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  333 |       printf(format,"CN",igl::min_size(vN),igl::max_size(vN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:343:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  343 |       printf(format,"FN",igl::min_size(vFN),igl::max_size(vFN));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:354:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  354 |       printf(format,"TC",igl::min_size(vTC),igl::max_size(vTC));
+      |              ^~~~~~
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/readOBJ.cpp:364:14: warning: format string is not a string literal [-Wformat-nonliteral]
+  364 |       printf(format,"FTC",igl::min_size(vFTC),igl::max_size(vFTC));
+      |              ^~~~~~
+In file included from /Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:23:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.h:70:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:19:
+In file included from /Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.h:63:
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:43:3: warning: 'switch' missing 'default' label [-Wswitch-default]
+   43 |   switch(simplex_size)
+      |   ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/boundary_facets.cpp:115:10: note: in instantiation of function template specialization 'igl::boundary_facets<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, 1>, Eigen::Matrix<int, -1, 1>>' requested here
+  115 |   return boundary_facets(T,F,J,K);
+      |          ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:101:7: note: in instantiation of function template specialization 'igl::boundary_facets<Eigen::Matrix<int, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+  101 |       boundary_facets(T,F);
+      |       ^
+/Users/ernest.lee/.cache/CPM/libigl/8943d30343dc80e558fa6dce2df4f4a64b16f44c/include/igl/read_triangle_mesh.cpp:68:10: note: in instantiation of function template specialization 'igl::read_triangle_mesh<Eigen::Matrix<double, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+   68 |   return read_triangle_mesh(str,V,F,_1,_2,_3,_4);
+      |          ^
+/Users/ernest.lee/Documents/meshing-pen/3-interactor/garment-fit/vendor/cloth-fit/src/polyfem/garment/optimize.cpp:1169:18: note: in instantiation of function template specialization 'igl::read_triangle_mesh<Eigen::Matrix<double, -1, -1>, Eigen::Matrix<int, -1, -1>>' requested here
+ 1169 |             igl::read_triangle_mesh(avatar_mesh_path, avatar_v, avatar_f);
+      |                  ^
+19 warnings generated.
+[226/227] Linking CXX executable PolyFEM_bin
